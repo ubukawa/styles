@@ -1,0 +1,47 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 5
+    - 2
+  - - case
+    - - has
+      - tunnel
+    - true
+    - false
+  - false
+id: ls-road-tunnel-line-c
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#CC7A8F'
+      - - 13
+        - '#ffffff'
+  line-opacity: 0.25
+  line-width:
+    stops:
+      - - 4
+        - 0.1
+      - - 6
+        - 0.6
+      - - 8
+        - 0.8
+      - - 10
+        - 1
+      - - 12
+        - 1.33
+      - - 13
+        - 2
+      - - 15
+        - 4
+      - - 17
+        - 10
+      - - 19
+        - 24
+source: v
+source-layer: road
+type: line

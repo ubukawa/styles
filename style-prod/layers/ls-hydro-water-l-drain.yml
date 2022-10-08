@@ -1,0 +1,25 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 4
+id: ls-hydro-water-l-drain
+layout:
+  icon-allow-overlap: true
+  icon-image: HYD_Drain
+  icon-rotation-alignment: map
+  icon-size:
+    stops:
+      - - 11.53
+        - 1
+      - - 18.17
+        - 3
+  symbol-placement: line
+  symbol-spacing: 4
+maxzoom: 18
+minzoom: 7
+paint:
+  icon-color: '#C7E4F2'
+source: v
+source-layer: water
+type: symbol

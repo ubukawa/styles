@@ -1,0 +1,40 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 14
+    - 18
+    - 19
+    - 21
+    - 17
+    - 22
+    - 20
+    - 16
+  - - case
+    - - has
+      - bridge
+    - true
+    - false
+  - false
+id: ls-road-bridge-line-h
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    - rgb
+    - 235
+    - 235
+    - 235
+  line-width:
+    - interpolate
+    - - exponential
+      - 2
+    - - zoom
+    - 6
+    - 1
+    - 22
+    - 64
+source: v
+source-layer: road
+type: line

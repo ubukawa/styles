@@ -1,0 +1,21 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 1
+id: ls-hydro-water-l-river
+maxzoom: 18
+minzoom: 7
+paint:
+  line-color: '#D8ECF6'
+  line-width:
+    stops:
+      - - 7.21
+        - 1
+      - - 11.53
+        - 1.333
+      - - 18.17
+        - 4.444
+source: v
+source-layer: water
+type: line

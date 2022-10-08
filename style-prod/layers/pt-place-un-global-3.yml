@@ -1,0 +1,33 @@
+filter:
+  - match
+  - - get
+    - type
+  - - Suburb
+    - Other Populated Places
+  - - match
+    - - get
+      - countrycode
+    - XKX
+    - false
+    - true
+  - false
+id: pt-place-un-global-3
+layout:
+  text-field: '{placename1}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-size:
+    - step
+    - - zoom
+    - 9
+    - 14
+    - 10
+maxzoom: 15
+minzoom: 13
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

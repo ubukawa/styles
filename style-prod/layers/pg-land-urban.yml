@@ -1,0 +1,29 @@
+filter:
+  - match
+  - - get
+    - fclass
+  - - cemetery
+    - commercial
+    - industrial
+    - residential
+  - true
+  - false
+id: pg-land-urban
+maxzoom: 19
+paint:
+  fill-color:
+    - match
+    - - get
+      - fclass
+    - cemetery
+    - '#BDDFC9'
+    - commercial
+    - '#ECE0CF'
+    - industrial
+    - '#E1DEEC'
+    - residential
+    - '#EDE6E6'
+    - '#000000'
+source: v
+source-layer: lu_urban
+type: fill

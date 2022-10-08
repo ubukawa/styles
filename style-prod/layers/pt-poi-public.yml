@@ -1,0 +1,67 @@
+filter:
+  - match
+  - - get
+    - ungsc_mission
+  - - UNMIK
+  - false
+  - - get
+    - status
+id: pt-poi-public
+layout:
+  icon-image:
+    - match
+    - - get
+      - fclass
+    - ngo
+    - POI_NGO
+    - post_office
+    - POI_Post
+    - fire_station
+    - POI_Fire
+    - prison
+    - POI_Prison
+    - police
+    - POI_Police
+    - courthouse
+    - POI_Court
+    - embassy
+    - POI_Embassy
+    - townhall
+    - POI_Townhall
+    - POI_Public
+  icon-size:
+    stops:
+      - - 13
+        - 0.8
+      - - 15
+        - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 12
+paint:
+  icon-color: '#343434'
+  text-color: '#343434'
+  text-halo-color:
+    - rgba
+    - 255
+    - 255
+    - 255
+    - 0.75
+  text-halo-width: 1.33333
+  text-opacity:
+    stops:
+      - - 13
+        - 0
+      - - 14
+        - 1
+source: v
+source-layer: poi_public
+type: symbol

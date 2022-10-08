@@ -1,0 +1,35 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+  - true
+  - false
+id: pg-land-nature-m
+maxzoom: 19
+paint:
+  fill-color:
+    - match
+    - - get
+      - z_order
+    - - 13
+      - 14
+      - 17
+    - '#F2F2DC'
+    - 15
+    - '#E2EBCF'
+    - 16
+    - '#F2F2E3'
+    - - 18
+      - 19
+    - '#CFE6C3'
+    - '#000000'
+source: v
+source-layer: nature-m
+type: fill

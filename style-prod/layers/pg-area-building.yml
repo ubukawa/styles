@@ -1,0 +1,31 @@
+filter:
+  - match
+  - - geometry-type
+  - - Polygon
+    - MultiPolygon
+  - true
+  - false
+id: pg-area-building
+maxzoom: 19
+paint:
+  fill-extrusion-color: '#CBC5C5'
+  fill-extrusion-height:
+    - case
+    - - has
+      - height
+    - - max
+      - - to-number
+        - - get
+          - height
+      - 5
+    - - max
+      - - '*'
+        - - to-number
+          - - get
+            - building_levels
+        - 3.66
+      - 5
+  fill-extrusion-opacity: 0.7
+source: v
+source-layer: building
+type: fill-extrusion

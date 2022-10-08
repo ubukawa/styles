@@ -1,0 +1,169 @@
+center:
+  - 0
+  - 0
+glyphs: https://dev-geoportal.dfs.un.org/unvt/font/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/pg-landmass.yml
+  - !!inc/file layers/pg-landcover.yml
+  - !!inc/file layers/pg-land-trans-area.yml
+  - !!inc/file layers/pg-land-urban.yml
+  - !!inc/file layers/pg-land-nature-m.yml
+  - !!inc/file layers/pg-land-nature-l.yml
+  - !!inc/file layers/pg-area-pier.yml
+  - !!inc/file layers/pg-area-military.yml
+  - !!inc/file layers/pg-area-building.yml
+  - !!inc/file layers/ls-area-park-halo.yml
+  - !!inc/file layers/ls-area-park-line.yml
+  - !!inc/file layers/pg-hydro-water-wetland.yml
+  - !!inc/file layers/pg-hydro-water.yml
+  - !!inc/file layers/ls-hydro-water-l-drain.yml
+  - !!inc/file layers/ls-hydro-water-l-canal.yml
+  - !!inc/file layers/ls-hydro-water-l-stream.yml
+  - !!inc/file layers/ls-hydro-water-l-river.yml
+  - !!inc/file layers/ls-hydro-water-s.yml
+  - !!inc/file layers/ls-water-l-label.yml
+  - !!inc/file layers/ls-coastline.yml
+  - !!inc/file layers/ls-coastline-l.yml
+  - !!inc/file layers/pt-lab-water-l-water.yml
+  - !!inc/file layers/pt-lab-water-island.yml
+  - !!inc/file layers/pt-lab-water-bay.yml
+  - !!inc/file layers/pt-lab-water-sea.yml
+  - !!inc/file layers/pt-lab-water-ocean.yml
+  - !!inc/file layers/ls-road-tunnel-case-g.yml
+  - !!inc/file layers/ls-road-tunnel-case-f.yml
+  - !!inc/file layers/ls-road-tunnel-case-e.yml
+  - !!inc/file layers/ls-road-tunnel-case-d.yml
+  - !!inc/file layers/ls-road-tunnel-case-c.yml
+  - !!inc/file layers/ls-road-tunnel-case-b.yml
+  - !!inc/file layers/ls-road-tunnel-case-a.yml
+  - !!inc/file layers/ls-road-tunnel-line-h.yml
+  - !!inc/file layers/ls-road-tunnel-line-g.yml
+  - !!inc/file layers/ls-road-tunnel-line-f.yml
+  - !!inc/file layers/ls-road-tunnel-line-e.yml
+  - !!inc/file layers/ls-road-tunnel-line-d.yml
+  - !!inc/file layers/ls-road-tunnel-line-c.yml
+  - !!inc/file layers/ls-road-tunnel-line-b.yml
+  - !!inc/file layers/ls-road-tunnel-line-a.yml
+  - !!inc/file layers/ls-road-case-g.yml
+  - !!inc/file layers/ls-road-case-f.yml
+  - !!inc/file layers/ls-road-case-e.yml
+  - !!inc/file layers/ls-road-case-d.yml
+  - !!inc/file layers/ls-road-case-c.yml
+  - !!inc/file layers/ls-road-case-b.yml
+  - !!inc/file layers/ls-road-case-a.yml
+  - !!inc/file layers/ls-road-line-h.yml
+  - !!inc/file layers/ls-road-line-g.yml
+  - !!inc/file layers/ls-road-line-f.yml
+  - !!inc/file layers/ls-road-line-e.yml
+  - !!inc/file layers/ls-road-line-d.yml
+  - !!inc/file layers/ls-road-line-c.yml
+  - !!inc/file layers/ls-road-line-b.yml
+  - !!inc/file layers/ls-road-line-a.yml
+  - !!inc/file layers/ls-road-bridge-case-g.yml
+  - !!inc/file layers/ls-road-bridge-case-f.yml
+  - !!inc/file layers/ls-road-bridge-case-e.yml
+  - !!inc/file layers/ls-road-bridge-case-d.yml
+  - !!inc/file layers/ls-road-bridge-case-c.yml
+  - !!inc/file layers/ls-road-bridge-case-b.yml
+  - !!inc/file layers/ls-road-bridge-case-a.yml
+  - !!inc/file layers/ls-road-bridge-line-h.yml
+  - !!inc/file layers/ls-road-bridge-line-g.yml
+  - !!inc/file layers/ls-road-bridge-line-f.yml
+  - !!inc/file layers/ls-road-bridge-line-e.yml
+  - !!inc/file layers/ls-road-bridge-line-d.yml
+  - !!inc/file layers/ls-road-bridge-line-c.yml
+  - !!inc/file layers/ls-road-bridge-line-b.yml
+  - !!inc/file layers/ls-road-bridge-line-a.yml
+  - !!inc/file layers/ls-road-line-small.yml
+  - !!inc/file layers/ls-railway-subway.yml
+  - !!inc/file layers/ls-railway-line.yml
+  - !!inc/file layers/ls-railway-dash.yml
+  - !!inc/file layers/ls-ferry.yml
+  - !!inc/file layers/ls-structure.yml
+  - !!inc/file layers/ls-structure-taxiway.yml
+  - !!inc/file layers/ls-structure-runway.yml
+  - !!inc/file layers/ls-road-symbol.yml
+  - !!inc/file layers/ls-ferry-symbol.yml
+  - !!inc/file layers/pt-place-osm-place-3.yml
+  - !!inc/file layers/pt-place-osm-place-2.yml
+  - !!inc/file layers/pt-place-osm-place-1.yml
+  - !!inc/file layers/pt-place-un-unmik-2.yml
+  - !!inc/file layers/pt-place-un-unmik-1.yml
+  - !!inc/file layers/pt-place-un-global-3.yml
+  - !!inc/file layers/pt-un-global-2.yml
+  - !!inc/file layers/pt-place-un-global-1.yml
+  - !!inc/file layers/pt-poi-traffic.yml
+  - !!inc/file layers/pt-poi-water.yml
+  - !!inc/file layers/pt-poi-other.yml
+  - !!inc/file layers/pt-poi-heritage.yml
+  - !!inc/file layers/pt-poi-worship.yml
+  - !!inc/file layers/pt-poi-services-2.yml
+  - !!inc/file layers/pt-poi-services-1.yml
+  - !!inc/file layers/pt-poi-public.yml
+  - !!inc/file layers/pt-poi-trans-2.yml
+  - !!inc/file layers/pt-poi-trans-1.yml
+  - !!inc/file layers/pt-poi-iata.yml
+  - !!inc/file layers/pt-poi-un-traffic.yml
+  - !!inc/file layers/pt-poi-un-water.yml
+  - !!inc/file layers/pt-poi-un-other.yml
+  - !!inc/file layers/pt-poi-un-heritage.yml
+  - !!inc/file layers/pt-poi-un-worship.yml
+  - !!inc/file layers/pt-poi-un-services-2.yml
+  - !!inc/file layers/pt-poi-un-services-1.yml
+  - !!inc/file layers/pt-poi-un-public.yml
+  - !!inc/file layers/pt-poi-un-trans-1.yml
+  - !!inc/file layers/pt-poi-un-airport.yml
+  - !!inc/file layers/pt-poi-minusca-traffic.yml
+  - !!inc/file layers/pt-poi-minusca-other.yml
+  - !!inc/file layers/pt-poi-minusca-heritage.yml
+  - !!inc/file layers/pt-poi-minusca-worship.yml
+  - !!inc/file layers/pt-poi-minusca-services-2.yml
+  - !!inc/file layers/pt-poi-minusca-services-1.yml
+  - !!inc/file layers/pt-poi-minusca-public.yml
+  - !!inc/file layers/pt-poi-minusca-trans-1.yml
+  - !!inc/file layers/pt-poi-minusca-airport.yml
+  - !!inc/file layers/pt-lab-admin3-mik.yml
+  - !!inc/file layers/pt-lab-admin3-vmc.yml
+  - !!inc/file layers/pt-lab-admin2.yml
+  - !!inc/file layers/pt-lab-admin1.yml
+  - !!inc/file layers/ls-admin-sovereign-halo.yml
+  - !!inc/file layers/ls-admin-autonomous-halo.yml
+  - !!inc/file layers/ls-admin-ISAO-halo.yml
+  - !!inc/file layers/ls-admin-admin3.yml
+  - !!inc/file layers/ls-admin-admin2.yml
+  - !!inc/file layers/ls-admin-admin1.yml
+  - !!inc/file layers/ls-admin-sovereign.yml
+  - !!inc/file layers/ls-admin-autonomous.yml
+  - !!inc/file layers/ls-admin-l-other.yml
+  - !!inc/file layers/ls-admin-l-armistice.yml
+  - !!inc/file layers/ls-admin-special.yml
+  - !!inc/file layers/ls-admin-international.yml
+  - !!inc/file layers/pt-place-capital.yml
+  - !!inc/file layers/pt-lab-cty-ita.yml
+  - !!inc/file layers/pt-lab-cty-ant.yml
+  - !!inc/file layers/pt-lab-cty-reg2.yml
+  - !!inc/file layers/pt-lab-cty-reg1.yml
+  - !!inc/file layers/pt-lab-cty-bold.yml
+site_root: https://dev-geoportal.dfs.un.org
+sources:
+  v:
+    attribution: >-
+      &copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap
+      contributors</a>, and <a href='https://www.un.org/geospatial/'>UN
+      Geospatial</a> <a
+      href='https://geoportal.un.org/arcgis/apps/sites/#/unitemaps'><img
+      src='https://geoportal.un.org/webapps/resources/LOGOS/PoweredbyUniteMaps.png'
+      alt='Powered by Unite Maps'></a> <a
+      href='http://unopengis.org/unopengis/main/main.php'><img
+      src='https://unopengis.github.io/watermark/watermark.png' alt='UN OpenGIS'
+      style='width:40px;height:40px;'></a>
+    maxzoom: 15
+    minzoom: 0
+    tiles:
+      - >-
+        https://dev-geoportal.dfs.un.org/unvt/VT/zxy/UniteStreetMapVector/{z}/{x}/{y}.pbf
+    type: vector
+sprite: https://dev-geoportal.dfs.un.org/unvt/sprite_un/sprite_S
+version: 8
+zoom: 4

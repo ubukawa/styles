@@ -1,0 +1,22 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 1
+    - 4
+  - - case
+    - - has
+      - bridge
+    - false
+    - - has
+      - tunnel
+    - false
+    - true
+  - false
+id: ls-road-case-b
+layout:
+  line-cap: round
+  line-join: round
+source: v
+source-layer: road
+type: line

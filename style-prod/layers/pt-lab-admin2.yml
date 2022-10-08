@@ -1,0 +1,20 @@
+id: pt-lab-admin2
+layout:
+  text-field: '{adm2nm}'
+  text-font:
+    - Klokantech Noto Sans Italic
+  text-size: 10.6
+maxzoom: 13
+minzoom: 9
+paint:
+  text-color: '#828282'
+  text-halo-color:
+    - rgba
+    - 255
+    - 255
+    - 255
+    - 0.75
+  text-halo-width: 1.333
+source: v
+source-layer: bnd_lab2
+type: symbol

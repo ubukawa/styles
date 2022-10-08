@@ -1,0 +1,43 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 12
+    - 10
+  - - case
+    - - has
+      - tunnel
+    - true
+    - false
+  - false
+id: ls-road-tunnel-case-f
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - rgba(255,255,255,0.75)
+      - - 13
+        - '#BAA6AB'
+  line-opacity: 0.5
+  line-width:
+    stops:
+      - - 8
+        - 0.6
+      - - 10
+        - 0.75
+      - - 12
+        - 1
+      - - 13
+        - 1.75
+      - - 15
+        - 3.5
+      - - 17
+        - 8
+      - - 19
+        - 21
+source: v
+source-layer: road
+type: line

@@ -1,0 +1,37 @@
+filter:
+  - match
+  - - get
+    - type
+  - - Town
+    - Village
+  - - match
+    - - get
+      - countrycode
+    - XKX
+    - false
+    - true
+  - false
+id: pt-un-global-2
+layout:
+  icon-image: PPL_Town
+  text-field: '{placename1}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-offset:
+    - 0
+    - 1
+  text-size:
+    - step
+    - - zoom
+    - 9
+    - 11
+    - 10.5
+maxzoom: 15
+minzoom: 9
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

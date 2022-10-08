@@ -1,0 +1,38 @@
+filter:
+  - match
+  - - get
+    - type
+  - City
+  - - match
+    - - get
+      - countrycode
+    - XKX
+    - true
+    - false
+  - false
+id: pt-place-un-unmik-1
+layout:
+  icon-image: PPL_City
+  text-field: |-
+    {label_1}
+    {label_2}
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-offset:
+    - 0
+    - 1.5
+  text-size:
+    - step
+    - - zoom
+    - 9
+    - 8
+    - 11
+maxzoom: 15
+minzoom: 6
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

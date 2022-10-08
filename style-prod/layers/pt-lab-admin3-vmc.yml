@@ -1,0 +1,25 @@
+id: pt-lab-admin3-vmc
+layout:
+  text-field: '{nombre_ver}'
+  text-font:
+    - Klokantech Noto Sans Italic
+  text-size:
+    - step
+    - - zoom
+    - 10
+    - 12
+    - 10.6
+maxzoom: 15
+minzoom: 11.5
+paint:
+  text-color: '#828282'
+  text-halo-color:
+    - rgba
+    - 255
+    - 255
+    - 255
+    - 0.75
+  text-halo-width: 1.333
+source: v
+source-layer: vmc_bnd_lab3
+type: symbol

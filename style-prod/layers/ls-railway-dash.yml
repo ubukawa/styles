@@ -1,0 +1,33 @@
+filter:
+  - match
+  - - get
+    - tunnel
+  - 'yes'
+  - false
+  - - any
+    - - match
+      - - get
+        - fclass
+      - subway
+      - false
+      - true
+    - - match
+      - - get
+        - bridge
+      - viaduct
+      - true
+      - false
+id: ls-railway-dash
+paint:
+  line-color:
+    - rgb
+    - 128
+    - 102
+    - 125
+  line-dasharray:
+    - 1
+    - 5
+  line-width: 2
+source: v
+source-layer: railway
+type: line

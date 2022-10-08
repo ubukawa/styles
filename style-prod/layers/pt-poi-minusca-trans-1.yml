@@ -1,0 +1,43 @@
+filter:
+  - match
+  - - get
+    - feat_class
+  - - Boat Ramp
+  - true
+  - false
+id: pt-poi-minusca-trans-1
+layout:
+  icon-allow-overlap: false
+  icon-image:
+    - match
+    - - get
+      - feat_class
+    - Boat Ramp
+    - POI_Ferry
+    - PPL_Town
+  icon-optional: false
+  icon-padding: 0
+  icon-size: 1
+  text-anchor: bottom
+  text-field: '{poiname}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-offset:
+    - 0
+    - -1
+  text-optional: true
+  text-size: 10.6667
+minzoom: 10
+paint:
+  icon-color: '#802677'
+  text-color: '#802677'
+  text-halo-color:
+    - rgba
+    - 255
+    - 255
+    - 255
+    - 0.75
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_minusca
+type: symbol

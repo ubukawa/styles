@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - '=='
+    - bdytyp
+    - 9
+id: ls-admin-sovereign-halo
+minzoom: 5.89
+paint:
+  line-color:
+    - rgba
+    - 230
+    - 230
+    - 223
+    - 0.656
+  line-width: 2
+source: v
+source-layer: bndl
+type: line

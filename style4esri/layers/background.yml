@@ -1,0 +1,9 @@
+id: background
+paint:
+  background-color:
+    stops:
+      - - 7
+        - '#D5EBF5'
+      - - 8
+        - '#D8EBF5'
+type: background

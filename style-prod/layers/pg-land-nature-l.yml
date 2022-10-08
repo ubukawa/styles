@@ -1,0 +1,55 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 1
+    - 2
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+  - true
+  - false
+id: pg-land-nature-l
+maxzoom: 19
+paint:
+  fill-color:
+    - match
+    - - get
+      - z_order
+    - 2
+    - '#E5DFD1'
+    - 9
+    - '#ECE7DE'
+    - - 4
+      - 16
+    - '#F2F2E3'
+    - - 13
+      - 14
+    - '#F2F2DC'
+    - - 5
+      - 6
+      - 15
+    - '#E2EBCF'
+    - - 7
+      - 12
+    - '#E1EDC9'
+    - - 1
+      - 3
+      - 8
+      - 10
+      - 11
+    - '#BAE3BA'
+    - '#000000'
+source: v
+source-layer: nature-l
+type: fill

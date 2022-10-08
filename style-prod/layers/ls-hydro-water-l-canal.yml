@@ -1,0 +1,25 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 3
+id: ls-hydro-water-l-canal
+maxzoom: 18
+minzoom: 7
+paint:
+  line-color: '#C7E4F2'
+  line-dasharray:
+    - 2
+    - 6667
+    - 2
+  line-width:
+    stops:
+      - - 7.21
+        - 0.4
+      - - 11.53
+        - 0.6667
+      - - 18.17
+        - 2.6667
+source: v
+source-layer: water
+type: line

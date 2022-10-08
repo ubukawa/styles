@@ -1,0 +1,44 @@
+filter:
+  - match
+  - - get
+    - feat_class
+  - - Club
+    - Restaurant
+  - true
+  - false
+id: pt-poi-minusca-services-2
+layout:
+  icon-image:
+    - match
+    - - get
+      - feat_class
+    - Restaurant
+    - POI_Restaurant
+    - Club
+    - POI_Bar
+    - PPL_Town
+  icon-size: 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 16
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  text-halo-color:
+    - rgba
+    - 255
+    - 255
+    - 255
+    - 0.75
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_minusca
+type: symbol

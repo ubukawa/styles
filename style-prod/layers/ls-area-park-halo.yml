@@ -1,0 +1,35 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - maritime
+id: ls-area-park-halo
+layout:
+  line-join: round
+maxzoom: 18
+paint:
+  line-color:
+    - match
+    - - get
+      - z_order
+    - 1
+    - - rgba
+      - 186
+      - 234
+      - 218
+      - 0.3
+    - - rgba
+      - 187
+      - 235
+      - 203
+      - 0.3
+  line-width:
+    - match
+    - - get
+      - z_order
+    - 1
+    - 5.333
+    - 4
+source: v
+source-layer: area_park
+type: line

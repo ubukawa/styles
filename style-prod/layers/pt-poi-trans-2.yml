@@ -1,0 +1,33 @@
+filter:
+  - match
+  - - get
+    - fclass
+  - - bus_stop
+    - halt
+    - tram_stop
+  - - get
+    - status
+  - false
+id: pt-poi-trans-2
+layout:
+  icon-allow-overlap: false
+  icon-image:
+    - match
+    - - get
+      - fclass
+    - bus_stop
+    - POI_Stop_B
+    - tram_stop
+    - POI_Stop_T
+    - halt
+    - POI_Stop_R
+    - PPL_Town
+  icon-optional: false
+  icon-padding: 0
+  icon-size: 1
+minzoom: 15
+paint:
+  icon-color: '#802677'
+source: v
+source-layer: poi_trans
+type: symbol

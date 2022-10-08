@@ -1,0 +1,43 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 4
+    - 5
+    - 6
+    - 7
+    - 8
+  - - match
+    - - get
+      - ungsc_mission
+    - - UNMIK
+      - UNSMIL
+      - MINUSCA
+      - MONUSCO
+      - UNIFIL
+      - UNMISS
+      - UNAMID
+      - MINUJUSTH
+    - false
+    - true
+  - false
+id: pt-place-osm-place-3
+layout:
+  text-field: '{name}'
+  text-font:
+    - Klokantech Noto Sans Regular
+  text-size:
+    - step
+    - - zoom
+    - 9
+    - 14
+    - 10
+maxzoom: 15
+minzoom: 13
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: osm_place
+type: symbol

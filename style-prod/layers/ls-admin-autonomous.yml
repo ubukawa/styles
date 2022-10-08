@@ -1,0 +1,29 @@
+filter:
+  - all
+  - - '=='
+    - bdytyp
+    - 8
+id: ls-admin-autonomous
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 4.89
+paint:
+  line-color:
+    stops:
+      - - 5
+        - '#7D868C'
+      - - 6
+        - '#737B80'
+  line-dasharray:
+    stops:
+      - - 5
+        - - 7.93333
+          - 4.93333
+      - - 6
+        - - 6.6667
+          - 4
+  line-width: 1
+source: v
+source-layer: bndl
+type: line
