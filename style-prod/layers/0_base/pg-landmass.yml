@@ -3,6 +3,7 @@ maxzoom: 20
 minzoom: 0
 paint:
   fill-color: '#FAF9F6'
-source: v
+#source: v
+source: !!inc/file source.yml
 source-layer: landmass
 type: fill
