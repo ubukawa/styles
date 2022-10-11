@@ -22,9 +22,7 @@ sources:
 layers:
   - !!inc/file layers/0_base/background.yml
   - !!inc/file layers/0_base/pg-landmass.yml
-  - !!inc/file layers/1_landuse/pg-landcover-20.yml
-  - !!inc/file layers/1_landuse/pg-landcover-30.yml
-  - !!inc/file layers/1_landuse/pg-landcover-80.yml
+  - !!inc/file layers/1_landuse/pg-landcover.yml #gridcode 20, 30, 80
   - !!inc/file layers/1_landuse/pg-land-trans-area.yml
   - !!inc/file layers/1_landuse/pg-land-urban-cemetery.yml
   - !!inc/file layers/1_landuse/pg-land-urban-commercial.yml

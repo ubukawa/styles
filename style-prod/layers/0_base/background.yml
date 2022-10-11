@@ -1,13 +1,11 @@
 id: background
 paint:
-  background-color:
-    stops:
-      - - 7
-        - '#D5EBF5'
-      - - 8
-        - '#D8EBF5'
-#      - - 16
-#        - '#D6EBF5'
-#      - - 17
-#        - '#FAF9F6'
+  background-color: '#D5EBF5' 
+ # The following is the previous setting, but I think there is no big change in two colors
+ # background-color:
+ #   stops:
+ #     - - 7
+ #       - '#D5EBF5'
+ #     - - 8
+ #       - '#D8EBF5'
 type: background
