@@ -1,15 +1,11 @@
 filter:
-  - match
-  - - get
+  - all
+  - - '!='
     - ungsc_mission
-  - - UNMIK
-  - false
-  - - match
-    - - get
-      - fclass
-    - - fuel
-    - true
-    - false
+    - UNMIK
+  - - '=='
+    - fclass
+    - fuel
 id: pt-poi-traffic
 layout:
   icon-image: POI_Fuel

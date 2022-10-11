@@ -16,7 +16,8 @@ layout:
   icon-image: PPL_Town
   text-field: '{placename1}'
   text-font:
-    - Klokantech Noto Sans Regular
+    - !!inc/file layers/ft-notosans-reg.yml
+#    - Klokantech Noto Sans Regular
   text-offset:
     - 0
     - 1

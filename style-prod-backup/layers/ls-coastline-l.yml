@@ -1,0 +1,14 @@
+id: ls-coastline-l
+maxzoom: 18
+minzoom: 15
+paint:
+  line-color: '#9BAEB4'
+  line-width:
+    stops:
+      - - 4
+        - 0.4
+      - - 18
+        - 0.8
+source: v
+source-layer: cstl
+type: line

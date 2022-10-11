@@ -1,14 +1,16 @@
 id: ls-coastline-l
-maxzoom: 18
-minzoom: 15
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 9
 paint:
-  line-color: '#9BAEB4'
+  line-color: '#B6DEF2'
   line-width:
     stops:
-      - - 4
-        - 0.4
-      - - 18
-        - 0.8
+      - - 11.53
+        - 0.6666667
+      - - 18.17
+        - 3.33333
 source: v
 source-layer: cstl
 type: line

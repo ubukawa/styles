@@ -4,25 +4,20 @@ filter:
     - bdytyp
     - 0
 id: ls-coastline
+layout:
+  line-cap: round
+  line-join: round
 maxzoom: 9
-minzoom: 0
 paint:
   line-color:
     stops:
       - - 4
-        - '#636566'
-      - - 5
-        - '#575859'
-      - - 6
-        - '#9BAEB4'
-  line-width:
-    stops:
-      - - 3
-        - 0.25
-      - - 4
-        - 0.4
-      - - 18
-        - 0.8
+        - '#609FBF'
+      - - 7
+        - '#3D9CCC'
+      - - 9
+        - '#B6DEF2'
+  line-width: 0.666667
 source: v
 source-layer: bndl
 type: line

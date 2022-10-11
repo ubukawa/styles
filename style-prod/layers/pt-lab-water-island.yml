@@ -17,7 +17,7 @@ layout:
 maxzoom: 10
 minzoom: 4
 paint:
-  text-color: rgba(113,126,133,0.75)
+  text-color: '#717E85'
   text-halo-color: '#FFFFFF'
   text-halo-width: 0.4
 source: v

@@ -1,15 +1,11 @@
 filter:
-  - match
-  - - get
+  - all
+  - - '=='
     - annotationclassid
-  - 7
-  - - match
-    - - get
-      - status
+    - 7
+  - - '=='
+    - status
     - 0
-    - true
-    - false
-  - false
 id: pt-lab-cty-ita
 layout:
   text-allow-overlap: true
@@ -36,12 +32,7 @@ paint:
         - '#636566'
       - - 5
         - '#575859'
-  text-halo-color:
-    stops:
-      - - 2
-        - rgba(255,255,255,0.25)
-      - - 3
-        - rgba(255,255,255,0.5)
+  text-halo-color: '#FFFFFF'
   text-halo-width:
     stops:
       - - 2

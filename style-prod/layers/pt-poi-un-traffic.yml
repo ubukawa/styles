@@ -1,16 +1,12 @@
 filter:
-  - match
-  - - get
+  - all
+  - - '!in'
     - countrycode
-  - - LIB
+    - LIB
     - CAF
-  - false
-  - - match
-    - - get
-      - type
-    - - Fuel
-    - true
-    - false
+  - - '=='
+    - type
+    - Fuel
 id: pt-poi-un-traffic
 layout:
   icon-image: POI_Fuel

@@ -1,13 +1,9 @@
 filter:
   - any
-  - - '=='
+  - - in
     - annotationclassid
     - 2
-  - - '=='
-    - annotationclassid
     - 4
-  - - '=='
-    - annotationclassid
     - 5
 id: pt-lab-water-sea
 layout:

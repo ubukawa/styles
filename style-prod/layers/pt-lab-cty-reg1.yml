@@ -1,17 +1,13 @@
 filter:
-  - match
-  - - get
+  - all
+  - - in
     - annotationclassid
-  - - 2
+    - 2
     - 5
     - 6
-  - - match
-    - - get
-      - status
+  - - '=='
+    - status
     - 0
-    - true
-    - false
-  - false
 id: pt-lab-cty-reg1
 layout:
   text-allow-overlap: true
@@ -38,12 +34,7 @@ paint:
         - '#636566'
       - - 5
         - '#575859'
-  text-halo-color:
-    stops:
-      - - 2
-        - rgba(255,255,255,0.25)
-      - - 3
-        - rgba(255,255,255,0.5)
+  text-halo-color: '#FFFFFF'
   text-halo-width:
     stops:
       - - 2

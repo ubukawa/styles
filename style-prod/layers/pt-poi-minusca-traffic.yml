@@ -1,10 +1,8 @@
 filter:
-  - match
-  - - get
+  - all
+  - - '=='
     - feat_class
-  - - Fuel Station
-  - true
-  - false
+    - Fuel Station
 id: pt-poi-minusca-traffic
 layout:
   icon-image: POI_Fuel

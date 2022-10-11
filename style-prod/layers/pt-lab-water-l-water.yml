@@ -1,21 +1,17 @@
 filter:
-  - match
-  - - get
+  - all
+  - - '!in'
+    - name
+    - Garabogazkol Aylagy
+    - Lago de Izabal
+    - Lagune Ndogo
+    - Lagune Nkomi
+    - Ijsselmeer
+    - Rio de la Plata
+    - Zaliv Kara-Bogaz-Gol
+  - - '=='
     - display
-  - 1
-  - - match
-    - - get
-      - name
-    - - Garabogazkol Aylagy
-      - Lago de Izabal
-      - Lagune Ndogo
-      - Lagune Nkomi
-      - Ijsselmeer
-      - Rio de la Plata
-      - Zaliv Kara-Bogaz-Gol
-    - false
-    - true
-  - false
+    - 1
 id: pt-lab-water-l-water
 layout:
   text-field: '{name}'
