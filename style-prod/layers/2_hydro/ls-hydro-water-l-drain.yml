@@ -1,19 +1,23 @@
-filter:
-  - any
-  - - '=='
+filter: 
+  - match
+  - - get
     - z_order
-    - 4
+  - 4 #drain
+  - true
+  - false
 id: ls-hydro-water-l-drain
 layout:
   icon-allow-overlap: true
   icon-image: HYD_Drain
   icon-rotation-alignment: map
   icon-size:
-    stops:
-      - - 11.53
-        - 1
-      - - 18.17
-        - 3
+  - interpolate
+  - - linear
+  - - zoom
+  - 11.53
+  - 1
+  - 18.17
+  - 3
   symbol-placement: line
   symbol-spacing: 4
 minzoom: 13

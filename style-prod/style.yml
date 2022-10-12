@@ -35,14 +35,11 @@ layers:
   - !!inc/file layers/3_area/ls-area-park-halo1.yml
   - !!inc/file layers/3_area/ls-area-park-line2.yml
   - !!inc/file layers/3_area/ls-area-park-line1.yml
-  - !!inc/file layers/2_hydro/ls-hydro-water-l-stream-halo.yml
-  - !!inc/file layers/2_hydro/ls-hydro-water-l-CD-halo.yml
-  - !!inc/file layers/2_hydro/ls-hydro-water-l-river-halo.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l-halo.yml
   - !!inc/file layers/2_hydro/ls-hydro-waterbody-outline.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-l-drain.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-l-canal.yml
-  - !!inc/file layers/2_hydro/ls-hydro-water-l-stream.yml
-  - !!inc/file layers/2_hydro/ls-hydro-water-l-river.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-s.yml
   - !!inc/file layers/2_hydro/pg-hydro-water-wetland.yml
   - !!inc/file layers/2_hydro/pg-hydro-water-glacier.yml
