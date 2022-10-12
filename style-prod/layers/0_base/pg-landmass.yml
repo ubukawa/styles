@@ -1,5 +1,5 @@
 id: pg-landmass
-maxzoom: 20
+maxzoom: !!inc/file maxz.yml
 minzoom: 0
 paint:
   fill-color: '#FAF9F6'

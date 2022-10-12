@@ -12,6 +12,6 @@ paint:
   - 30
   - '#ECF3DD'
   - '#F6EFEF' #80
-source: v
+source: !!inc/file source.yml
 source-layer: landcover
 type: fill

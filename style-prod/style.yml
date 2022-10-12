@@ -28,17 +28,8 @@ layers:
   - !!inc/file layers/1_landuse/pg-land-urban-commercial.yml
   - !!inc/file layers/1_landuse/pg-land-urban-industrial.yml
   - !!inc/file layers/1_landuse/pg-land-urban-residential.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-m-farm.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-m-forest.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-m-grass.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-m-heath.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-rock.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-quarry.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-heath.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-farm.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-grass.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-orchard.yml
-  - !!inc/file layers/1_landuse/pg-land-nature-l-park.yml
+  - !!inc/file layers/1_landuse/pg-land-nature-m.yml # z_order 13-19 (can be merged with nature-l at VT data)
+  - !!inc/file layers/1_landuse/pg-land-nature-l.yml # z_order 1-16
   - !!inc/file layers/3_area/pg-area-pier.yml
   - !!inc/file layers/3_area/pg-area-military.yml
   - !!inc/file layers/3_area/pg-area-building-shadow.yml
