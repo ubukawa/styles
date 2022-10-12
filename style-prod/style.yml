@@ -24,10 +24,7 @@ layers:
   - !!inc/file layers/0_base/pg-landmass.yml
   - !!inc/file layers/1_landuse/pg-landcover.yml #gridcode 20, 30, 80
   - !!inc/file layers/1_landuse/pg-land-trans-area.yml
-  - !!inc/file layers/1_landuse/pg-land-urban-cemetery.yml
-  - !!inc/file layers/1_landuse/pg-land-urban-commercial.yml
-  - !!inc/file layers/1_landuse/pg-land-urban-industrial.yml
-  - !!inc/file layers/1_landuse/pg-land-urban-residential.yml
+  - !!inc/file layers/1_landuse/pg-land-urban.yml
   - !!inc/file layers/1_landuse/pg-land-nature-m.yml # z_order 13-19 (can be merged with nature-l at VT data)
   - !!inc/file layers/1_landuse/pg-land-nature-l.yml # z_order 1-16
   - !!inc/file layers/3_area/pg-area-pier.yml
