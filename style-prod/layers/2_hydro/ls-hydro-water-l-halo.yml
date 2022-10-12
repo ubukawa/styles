@@ -15,59 +15,59 @@ layout:
 minzoom: 10.53
 paint:
   line-color:
-  - - match
-    - - get
-      - z_order
-    - 1
-    - '#B6DEF2'
-    - rgba(250,249,246,0.5)
-   line-width:
-  - interpolate
-  - - linear
-  - - zoom
-  - 10.53
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - 2.677
-    - 0
-  - 11
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - 2.923
-    - 2
-    - 2.76
-    - 0
-  - 11.53
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - 3.2
-    - 2
-    - 3
-    - 0
-  - 13
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - 3.967
-    - 2
-    - 3.664
-    - 1.664
-  - 18.17
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - 6.66667
-    - 2
-    - 6
-    - 4
+  - match
+  - - get
+    - z_order
+  - 1
+  - '#B6DEF2'
+  - rgba(250,249,246,0.5)
+  line-width:
+   - interpolate
+   - - linear
+   - - zoom
+   - 10.53
+   - - match
+     - - get 
+       - z_order
+     - 1
+     - 2.677
+     - 0
+   - 11
+   - - match
+     - - get 
+       - z_order
+     - 1
+     - 2.923
+     - 2
+     - 2.76
+     - 0
+   - 11.53
+   - - match
+     - - get 
+       - z_order
+     - 1
+     - 3.2
+     - 2
+     - 3
+     - 0
+   - 13
+   - - match
+     - - get 
+       - z_order
+     - 1
+     - 3.967
+     - 2
+     - 3.664
+     - 1.664
+   - 18.17
+   - - match
+     - - get 
+       - z_order
+     - 1
+     - 6.66667
+     - 2
+     - 6
+     - 4
 source: !!inc/file source.yml
 source-layer: water
 type: line
