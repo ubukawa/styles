@@ -10,7 +10,20 @@ id: ls-water-l-label2
 layout:
   symbol-placement: line
   symbol-spacing: 1000
-  text-field: '{name}'
+#  text-field: '{name}'
+  text-field:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 2
+    - - get
+      - name
+    - ""
+  - 14
+  - - get
+    - name
   text-font:
   - !!inc/file fonts/nsd-ita.yml #NotoSansDisplay-Italic
   text-optional: true
