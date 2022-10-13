@@ -13,6 +13,7 @@ layout:
   line-cap: round
   line-join: round
 minzoom: 10.53
+maxzoom: !!inc/file maxz.yml
 paint:
   line-color:
   - match

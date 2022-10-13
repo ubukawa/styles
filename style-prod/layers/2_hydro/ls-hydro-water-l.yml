@@ -13,6 +13,7 @@ layout:
   line-cap: round
   line-join: round
 #minzoom: 7 # This is not needed because we do it at the VT level (or setting the transparency)
+maxzoom: !!inc/file maxz.yml
 paint:
   line-color:
   - interpolate

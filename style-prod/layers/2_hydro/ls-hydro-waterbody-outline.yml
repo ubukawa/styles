@@ -8,6 +8,7 @@ filter:
   - true
 id: ls-hydro-waterbody-outline
 minzoom: 10.53
+maxzoom: !!inc/file maxz.yml
 layout:
   line-cap: round
   line-join: round

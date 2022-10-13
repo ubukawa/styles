@@ -21,6 +21,7 @@ layout:
   symbol-placement: line
   symbol-spacing: 4
 minzoom: 13
+maxzoom: !!inc/file maxz.yml
 paint:
   icon-color: '#C7E4F2'
 source: v

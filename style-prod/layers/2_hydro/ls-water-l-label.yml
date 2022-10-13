@@ -23,6 +23,7 @@ layout:
   text-optional: true
   text-size: 8
 minzoom: 9
+maxzoom: !!inc/file maxz.yml
 paint:
   text-color: '#3D9CCC'
 source: v

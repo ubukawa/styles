@@ -8,6 +8,7 @@ filter:
   - false
 id: ls-hydro-water-l-canal
 minzoom: 13
+maxzoom: !!inc/file maxz.yml
 paint:
   line-color: '#C7E4F2'
   line-dasharray:
