@@ -144,6 +144,7 @@ layers:
   - !!inc/file layers/5_admin/ls-admin-armistice.yml
   - !!inc/file layers/5_admin/ls-admin-special.yml
   - !!inc/file layers/5_admin/ls-admin-international.yml
+  - !!inc/file layers/2_hydro/ls-water-l-label2.yml
   - !!inc/file layers/2_hydro/ls-water-l-label.yml
   - !!inc/file layers/4_trans/ls-ferry-symbol.yml
   - !!inc/file layers/pt-lab-water-l-water.yml

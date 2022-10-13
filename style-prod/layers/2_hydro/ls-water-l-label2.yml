@@ -2,10 +2,8 @@ filter:
   - match
   - - get
     - z_order
-#  - - 1 #river
-    - 2 #stream
+  - - 2 #stream
     - 3 #canal
-#    - 4 #drain
   - true
   - false
 id: ls-water-l-label2
@@ -14,15 +12,11 @@ layout:
   symbol-spacing: 1000
   text-field: '{name}'
   text-font:
-    - NotoSans-Regular
-#  text-offset:
-#   - 0
-#   - 0.157
+  - !!inc/file fonts/nsd-ita.yml #NotoSansDisplay-Italic
   text-optional: true
   text-size: 9.33333
-#  text-anchor: bottom
   text-letter-spacing: 0.15
-minzoom: 13
+minzoom: 13 # canal should be start from 14 (for future)
 maxzoom: !!inc/file maxz.yml
 paint:
   text-color: '#3D9CCC'

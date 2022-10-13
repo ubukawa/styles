@@ -21,18 +21,13 @@ paint:
     - 0.5
   - - zoom
   - 10
-  - - match
-    - - get 
-      - z_order
-    - 1
-    - '#D8ECF6'
-    - '#C7E4F2'
+  - '#C7E4F2'
   - 11
   - - match
     - - get 
       - z_order
     - 1
-    - '#B6DEF2'
+    - '#D8ECF6'
     - '#C7E4F2'
   line-width:
   - interpolate

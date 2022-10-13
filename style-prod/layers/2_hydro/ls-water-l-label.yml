@@ -14,7 +14,14 @@ layout:
   symbol-spacing: 1000
   text-field: '{name}'
   text-font:
-    - NotoSans-Regular
+#  - !!inc/file fonts/nsd-ita.yml
+  - step
+  - - zoom
+  - - literal
+    - - !!inc/file fonts/nsd-ita.yml
+  - 11
+  - - literal 
+    - - !!inc/file fonts/nsd-med-ita.yml
 #  text-offset:
 #   - 0
 #   - 0.157
