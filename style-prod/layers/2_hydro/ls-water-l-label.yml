@@ -1,8 +1,13 @@
 filter:
-  - any
-  - - '=='
+  - match
+  - - get
     - z_order
-    - 1
+  - - 1 #river
+#    - 2 #stream
+#    - 3 #canal
+#    - 4 #drain
+  - true
+  - false
 id: ls-water-l-label
 layout:
   symbol-placement: line
@@ -27,5 +32,5 @@ maxzoom: !!inc/file maxz.yml
 paint:
   text-color: '#3D9CCC'
 source: v
-source-layer: water
+source-layer: !!inc/file source.yml
 type: symbol
