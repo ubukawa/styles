@@ -1,0 +1,34 @@
+filter: 
+  - match
+  - - get
+    - z_order
+  - - 29 # national park
+    - 30 #nature_reserve
+    - 31 #aboriginal_lands
+    - 32 #protected_area
+    - 33 #maritime
+  - true
+  - false
+id: ls-area-park-halo
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: !!inc/file maxz.yml
+paint:
+  line-color: 
+  - match
+  - - get
+    - z_order
+  - 29
+  - rgba(186,234,218,0.3)
+  - rgba(187,235,203,0.3)
+  line-width:
+  - match
+  - - get
+    - z_order
+  - 29
+  - 5.3333
+  - 4
+source: !!inc/file source.yml
+source-layer: area_park
+type: line

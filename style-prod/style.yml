@@ -31,10 +31,6 @@ layers:
   - !!inc/file layers/3_area/pg-area-military.yml
   - !!inc/file layers/3_area/pg-area-building-shadow.yml
   - !!inc/file layers/3_area/pg-area-building-fill.yml
-  - !!inc/file layers/3_area/ls-area-park-halo2.yml
-  - !!inc/file layers/3_area/ls-area-park-halo1.yml
-  - !!inc/file layers/3_area/ls-area-park-line2.yml
-  - !!inc/file layers/3_area/ls-area-park-line1.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-l-halo.yml
   - !!inc/file layers/2_hydro/ls-hydro-waterbody-outline.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-l-drain.yml
@@ -46,6 +42,8 @@ layers:
   - !!inc/file layers/2_hydro/pg-hydro-water-main.yml
 #  - !!inc/file layers/ls-coastline.yml  #This layer is edge of ocean in esri
 #  - !!inc/file layers/ls-coastline-l.yml #This layer is edge of ocean in esri
+  - !!inc/file layers/3_area/ls-area-park-halo.yml
+  - !!inc/file layers/3_area/ls-area-park.yml
   - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-k.yml
   - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-j.yml
   - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-i.yml

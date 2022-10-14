@@ -1,5 +1,5 @@
 id: pg-area-building-shadow
-maxzoom: 20
+maxzoom: !!inc/file maxz.yml
 minzoom: 14
 paint:
   fill-color: rgba(120,117,117,0.5)
@@ -11,6 +11,6 @@ paint:
       - - 17
         - - 3
           - 3
-source: v
+source: !!inc/file source.yml
 source-layer: building
 type: fill

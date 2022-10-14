@@ -1,4 +1,4 @@
-filter: # it can be filtered at VT creation stage. (there are 12 types of z_order in the source)
+filter: # it can be filtered at VT creation stage. (there are 12 types of z_order in the source, military will be used in "area")
   - match
   - - get
     - z_order
