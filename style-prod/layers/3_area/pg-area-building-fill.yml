@@ -4,11 +4,13 @@ minzoom: 12
 paint:
   fill-color: '#CBC5C5'
   fill-opacity:
-    stops:
-      - - 12
-        - 0
-      - - 14
-        - 1
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - 0
+  - 14
+  - 1
 source: !!inc/file source.yml
 source-layer: building
 type: fill

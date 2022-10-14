@@ -1,10 +1,12 @@
 filter:
-  - all
-  - - '=='
-    - fclass
-    - military
+  - match
+  - - get
+    - z_order
+  - 39 
+  - true
+  - false
 id: pg-area-military
-maxzoom: 20
+maxzoom: !!inc/file maxz.yml
 paint:
   fill-opacity:
     stops:
@@ -13,6 +15,6 @@ paint:
       - - 11
         - 1
   fill-pattern: ARE_Military
-source: v
+source: !!inc/file source.yml
 source-layer: lu_urban
 type: fill
