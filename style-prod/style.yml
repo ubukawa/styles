@@ -42,7 +42,6 @@ layers:
   - !!inc/file layers/2_hydro/ls-hydro-water-l.yml
   - !!inc/file layers/2_hydro/ls-hydro-water-s.yml
   - !!inc/file layers/2_hydro/pg-hydro-water-wetland.yml
-  - !!inc/file layers/2_hydro/pg-hydro-water-glacier.yml
   - !!inc/file layers/2_hydro/pg-hydro-water-small.yml
   - !!inc/file layers/2_hydro/pg-hydro-water-main.yml
 #  - !!inc/file layers/ls-coastline.yml  #This layer is edge of ocean in esri
@@ -144,6 +143,7 @@ layers:
   - !!inc/file layers/5_admin/ls-admin-armistice.yml
   - !!inc/file layers/5_admin/ls-admin-special.yml
   - !!inc/file layers/5_admin/ls-admin-international.yml
+  - !!inc/file layers/2_hydro/pg-hydro-watera-label
   - !!inc/file layers/2_hydro/ls-water-l-label2.yml
   - !!inc/file layers/2_hydro/ls-water-l-label.yml
   - !!inc/file layers/4_trans/ls-ferry-symbol.yml

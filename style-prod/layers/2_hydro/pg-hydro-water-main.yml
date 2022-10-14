@@ -1,16 +1,21 @@
 filter:
-  - all
-  - - '!='
-    - fclass
-    - wetland
-  - - '!='
-    - fclass
-    - glacier
+  - match
+  - - get
+    - z_order
+  - 3 #wetland
+  - false
+  - true
 id: pg-hydro-water-main
-maxzoom: 20
+maxzoom: !!inc/file maxz.yml
 minzoom: 6
 paint:
-  fill-color: '#D8EBF5'
-source: v
+  fill-color: #'#D8EBF5'
+  - match
+  - - get
+    - z_order
+  - 5 # glacier
+  - '#FBFCFB'
+  - '#D8EBF5'
+source: !!inc/file source.yml
 source-layer: watera
 type: fill

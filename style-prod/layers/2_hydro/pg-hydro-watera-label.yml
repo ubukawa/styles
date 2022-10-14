@@ -1,0 +1,26 @@
+id: pg-hydro-watera-label
+layout:
+#  symbol-spacing: 1000
+  text-field: '{name}'
+  text-font:
+#  - !!inc/file fonts/nsd-ita.yml
+  - step
+  - - zoom
+  - - literal
+    - - !!inc/file fonts/nsd-ita.yml
+  - 11
+  - - literal 
+    - - !!inc/file fonts/nsd-med-ita.yml
+  text-optional: true
+  text-size: 9.33333
+#  text-anchor: bottom
+  text-letter-spacing: 0.15
+minzoom: 10.66667
+maxzoom: !!inc/file maxz.yml
+paint:
+  text-color: red#'#3D9CCC'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: watera
+type: symbol
