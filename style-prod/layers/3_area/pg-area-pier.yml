@@ -1,8 +1,10 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get
     - fclass
-    - pier
+  - pier
+  - true
+  - false
 id: pg-area-pier
 maxzoom: !!inc/file maxz.yml
 paint:

@@ -135,11 +135,12 @@ layers:
   - !!inc/file layers/5_admin/ls-admin-admin3.yml
   - !!inc/file layers/5_admin/ls-admin-admin2.yml
   - !!inc/file layers/5_admin/ls-admin-admin1.yml
-  - !!inc/file layers/5_admin/ls-admin-sovereign.yml
-  - !!inc/file layers/5_admin/ls-admin-autonomous.yml
+#  - !!inc/file layers/5_admin/ls-admin-sovereign.yml
+#  - !!inc/file layers/5_admin/ls-admin-autonomous.yml
   - !!inc/file layers/5_admin/ls-admin-l-other.yml
-  - !!inc/file layers/5_admin/ls-admin-armistice.yml
-  - !!inc/file layers/5_admin/ls-admin-special.yml
+#  - !!inc/file layers/5_admin/ls-admin-armistice.yml
+#  - !!inc/file layers/5_admin/ls-admin-special.yml
+  - !!inc/file layers/5_admin/ls-admin-dash.yml
   - !!inc/file layers/5_admin/ls-admin-international.yml
   - !!inc/file layers/2_hydro/pg-hydro-watera-label.yml # tentatively added
   - !!inc/file layers/2_hydro/ls-water-l-label2.yml
