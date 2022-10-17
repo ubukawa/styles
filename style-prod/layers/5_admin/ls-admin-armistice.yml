@@ -1,11 +1,13 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get 
     - bdytyp
-    - 3
+  - 3
+  - true
+  - false
 id: ls-admin-armistice
 layout:
-#  line-cap: round
+  line-cap: round
   line-join: round
 paint:
   line-color:
@@ -33,21 +35,23 @@ paint:
         - - 6
           - 3.5
   line-width:
-    stops:
-      - - 0
-        - 0.1
-      - - 1
-        - 0.133333
-      - - 2
-        - 0.333333
-      - - 3
-        - 0.5
-      - - 4
-        - 0.666667
-      - - 5
-        - 1
-      - - 6
-        - 1.333
-source: v
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - 0.1
+  - 1
+  - 0.133333
+  - 2
+  - 0.333333
+  - 3
+  - 0.5
+  - 4
+  - 0.666667
+  - 5
+  - 1
+  - 6
+  - 1.333333
+source: !!inc/file source.yml
 source-layer: bndl
 type: line

@@ -1,8 +1,10 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get
     - bdytyp
-    - 9
+  - 9
+  - true
+  - false
 id: ls-admin-sovereign
 layout:
   line-cap: round
@@ -11,6 +13,6 @@ minzoom: 5.89
 paint:
   line-color: '#9C9C9C'
   line-width: 1
-source: v
+source: !!inc/file source.yml
 source-layer: bndl
 type: line

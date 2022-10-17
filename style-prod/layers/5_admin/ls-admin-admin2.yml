@@ -1,8 +1,10 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get 
     - bdytyp
-    - 7
+  - 7
+  - true
+  - false
 id: ls-admin-admin2
 minzoom: 7.21
 paint:
@@ -11,6 +13,6 @@ paint:
     - 4
     - 6
   line-width: 0.666667
-source: v
+source: !!inc/file source.yml
 source-layer: bndl
 type: line

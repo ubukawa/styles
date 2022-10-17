@@ -1,8 +1,10 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get 
     - bdytyp
-    - 8
+  - 8
+  - true
+  - false
 id: ls-admin-autonomous
 layout:
 #  line-cap: round
@@ -14,6 +16,6 @@ paint:
     - 6.66667
     - 4
   line-width: 1
-source: v
+source: !!inc/file source.yml
 source-layer: bndl
 type: line

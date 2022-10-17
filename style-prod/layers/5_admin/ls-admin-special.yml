@@ -1,11 +1,13 @@
 filter:
-  - all
-  - - '=='
+  - match
+  - - get
     - bdytyp
-    - 2
+  - 2
+  - true
+  - false
 id: ls-admin-special
 layout:
-#  line-cap: round # I need to confirm
+  line-cap: round # I need to confirm
   line-join: round
 paint:
   line-color:
@@ -27,21 +29,23 @@ paint:
         - - 4
           - 2
   line-width:
-    stops:
-      - - 0
-        - 0.1
-      - - 1
-        - 0.133333
-      - - 2
-        - 0.333333
-      - - 3
-        - 0.5
-      - - 4
-        - 0.666667
-      - - 5
-        - 1
-      - - 6
-        - 1.333
-source: v
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - 0.1
+  - 1
+  - 0.133333
+  - 2
+  - 0.333333
+  - 3
+  - 0.5
+  - 4
+  - 0.666667
+  - 5
+  - 1
+  - 6
+  - 1.333333
+source: !!inc/file source.yml
 source-layer: bndl
 type: line
