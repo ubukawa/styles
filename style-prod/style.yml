@@ -327,4 +327,4 @@ layers:
   - !!inc/file layers/7_place/pt-place-capital3.yml # We can adjust text overlap in near future
   - !!inc/file layers/7_place/pt-place-capital2.yml # We can adjust text overlap in near future
   - !!inc/file layers/7_place/pt-place-capital1.yml # We can adjust text overlap in near future
-_ssl: true
+#_ssl: true
