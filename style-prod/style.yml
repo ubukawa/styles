@@ -84,12 +84,10 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-line-i.yml
   - !!inc/file layers/4_trans/road/ls-road-line-h.yml
   - !!inc/file layers/4_trans/road/ls-road-line-g.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-f.yml
   - !!inc/file layers/4_trans/road/ls-road-line-e.yml
   - !!inc/file layers/4_trans/road/ls-road-line-d.yml
   - !!inc/file layers/4_trans/road/ls-road-line-c.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-b.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-a.yml
+  - !!inc/file layers/4_trans/road/ls-road-line-abf.yml
   - !!inc/file layers/4_trans/road/ls-road-line-small.yml
   - !!inc/file layers/4_trans/railway/ls-railway-tram-halo.yml
   - !!inc/file layers/4_trans/railway/ls-railway-tram-line.yml
