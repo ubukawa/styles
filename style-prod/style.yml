@@ -83,11 +83,10 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-dash-j.yml #added
   - !!inc/file layers/4_trans/road/ls-road-line-i.yml
   - !!inc/file layers/4_trans/road/ls-road-line-h.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-g.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-e.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-d.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-c.yml
-  - !!inc/file layers/4_trans/road/ls-road-line-abf.yml
+  - !!inc/file layers/4_trans/road/ls-road-line-fg.yml # link
+  - !!inc/file layers/4_trans/road/ls-road-line-e.yml # secondary
+  - !!inc/file layers/4_trans/road/ls-road-line-cd.yml #primary, secondary
+  - !!inc/file layers/4_trans/road/ls-road-line-ab.yml #motorway, trunk
   - !!inc/file layers/4_trans/road/ls-road-line-small.yml
   - !!inc/file layers/4_trans/railway/ls-railway-tram-halo.yml
   - !!inc/file layers/4_trans/railway/ls-railway-tram-line.yml
