@@ -1,12 +1,16 @@
 filter:
-  - all
-  - - in
+- all
+- - in
+  - - get
     - z_order
-    - 9
-    - 10
-  - - '!has'
+  - - literal
+    - - 9
+      - 10
+- - '!'
+  - - 'has'
     - tunnel
-  - - '!has'
+- - '!' 
+  - - 'has'
     - bridge
 id: ls-road-line-e
 layout:
@@ -15,29 +19,36 @@ layout:
 minzoom: 8
 paint:
   line-color:
-    stops:
-      - - 12
-        - '#BAA6AB'
-      - - 13
-        - '#DDD1D4'
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - '#BAA6AB'
+  - 13
+  - '#DDD1D4'
   line-width:
-    stops:
-      - - 6
-        - 0.45
-      - - 8
-        - 0.6
-      - - 10
-        - 0.75
-      - - 12
-        - 1
-      - - 13
-        - 1.5
-      - - 15
-        - 3
-      - - 17
-        - 8
-      - - 19
-        - 20
-source: v
+  - interpolate
+  - - linear
+  - - zoom
+  - 4 ###### ZL #####
+  - 0
+  - 6 ###### ZL #####
+  - 0.45
+  - 8 ###### ZL #####
+  - 0.6
+  - 10 ###### ZL #####
+  - 0.75
+  - 12 ###### ZL #####
+  - 1
+  - 13 ###### ZL #####
+  - 1.5
+  - 15 ###### ZL #####
+  - 3
+  - 17 ###### ZL #####
+  - 8
+  - 19 ###### ZL #####
+  - 20
+source: !!inc/file source.yml
 source-layer: road
 type: line
