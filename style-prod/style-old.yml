@@ -1,3 +1,4 @@
+@@ -1,329 +0,0 @@
 version: 8
 sprite: https://dev-geoportal.dfs.un.org/unvt/sprite-rev/sprite_S
 glyphs: https://dev-geoportal.dfs.un.org/unvt/font/{fontstack}/{range}.pbf
@@ -88,14 +89,15 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-line-cd.yml #primary, secondary
   - !!inc/file layers/4_trans/road/ls-road-line-ab.yml #motorway, trunk
   - !!inc/file layers/4_trans/road/ls-road-line-small.yml
-  - !!inc/file layers/4_trans/railway/ls-railway-subway-halo.yml 
+  - !!inc/file layers/4_trans/railway/ls-railway-tram-halo.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-tram-line.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-subway-halo.yml
   - !!inc/file layers/4_trans/railway/ls-railway-subway-symbol.yml
-  - !!inc/file layers/4_trans/railway/ls-railway-LRT-halo.yml #Light, Rail, Tram
-  - !!inc/file layers/4_trans/railway/ls-railway-LRT-line.yml
-#  - !!inc/file layers/4_trans/railway/ls-railway-tram-line.yml
-#  - !!inc/file layers/4_trans/railway/ls-railway-light-line.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-light-halo.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-light-line.yml
   - !!inc/file layers/4_trans/railway/ls-railway-light-dash.yml
-#  - !!inc/file layers/4_trans/railway/ls-railway-rail-line.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-rail-halo.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-rail-line.yml
   - !!inc/file layers/4_trans/railway/ls-railway-rail-dash.yml
   - !!inc/file layers/4_trans/ls-ferry.yml #using symbol for line
   - !!inc/file layers/4_trans/runway/ls-structure-taxiway-halo.yml

@@ -2,24 +2,25 @@ filter:
   - match
   - - get
     - z_order
-  - - 2
-    - 3
+  - 4
   - true
   - false
-id: ls-railway-light-dash
+id: ls-railway-subway-line
 paint:
-  line-color: '#80667D'
-  line-dasharray:
-    - 0.215
-    - 3.44
+  line-color: rgba(242,230,241,0.3)
   line-width:
   - interpolate
   - - linear
   - - zoom
   - 16
-  - 1.5
+  - 1.33333
   - 19
-  - 3
+  - 4
+#    stops:
+#      - - 16
+#        - 1.33333
+#      - - 19
+#        - 4
 source: !!inc/file source.yml
 source-layer: railway
 type: line

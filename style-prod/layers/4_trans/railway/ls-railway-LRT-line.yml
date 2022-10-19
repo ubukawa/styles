@@ -5,24 +5,13 @@ filter:
   - - 1
     - 2
     - 3
-    - 4
     - 5
     - 6
   - true
   - false
-id: ls-railway-LRST-halo
+id: ls-railway-LRT-line
 paint:
-  line-color: #rgba(242,230,241,0.5)
-  - match
-  - - get
-    - z_order
-  - - 2
-    - 3
-    - 1
-  - red #rgba(242,230,241,0.6)
-  - 4
-  - red #rgba(242,230,241,0.3)
-  - red #rgba(242,230,241,0.5)
+  line-color: '#80667D'
   line-width:
   - interpolate
   - - linear
