@@ -1,3 +1,4 @@
+@@ -1,329 +0,0 @@
 version: 8
 sprite: https://dev-geoportal.dfs.un.org/unvt/sprite-rev/sprite_S
 glyphs: https://dev-geoportal.dfs.un.org/unvt/font/{fontstack}/{range}.pbf

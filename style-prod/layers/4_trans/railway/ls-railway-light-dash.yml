@@ -1,9 +1,11 @@
 filter:
-  - all
-  - - 'in'
+  - match
+  - - get
     - z_order
-    - 2
+  - - 2
     - 3
+  - true
+  - false
 id: ls-railway-light-dash
 paint:
   line-color: '#80667D'
@@ -11,11 +13,13 @@ paint:
     - 0.215
     - 3.44
   line-width:
-    stops:
-      - - 16
-        - 1.5
-      - - 19
-        - 3
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 1.5
+  - 19
+  - 3
 source: v
 source-layer: railway
 type: line
