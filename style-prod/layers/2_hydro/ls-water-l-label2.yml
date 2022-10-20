@@ -24,8 +24,7 @@ layout:
   - 14
   - - get
     - name
-  text-font:
-  - !!inc/file fonts/nsd-ita.yml #NotoSansDisplay-Italic
+  text-font: !!inc/file fonts/nsd-ita.yml #NotoSansDisplay-Italic
   text-optional: true
   text-size: 9.33333
   text-letter-spacing: 0.15

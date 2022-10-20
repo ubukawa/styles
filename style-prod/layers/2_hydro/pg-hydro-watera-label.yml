@@ -7,9 +7,9 @@ layout:
     - z_order
   - 5 #glacier
   - - literal
-    - - !!inc/file fonts/nsd-sb-ita.yml
+    - !!inc/file fonts/nsd-sb-ita.yml
   - - literal
-    - - !!inc/file fonts/nsd-med-ita.yml
+    - !!inc/file fonts/nsd-med-ita.yml
   text-optional: true
   text-size: 10.666
 #  text-anchor: bottom

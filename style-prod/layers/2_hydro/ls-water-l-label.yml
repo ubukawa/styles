@@ -18,10 +18,10 @@ layout:
   - step
   - - zoom
   - - literal
-    - - !!inc/file fonts/nsd-ita.yml
+    - !!inc/file fonts/nsd-ita.yml
   - 11
   - - literal 
-    - - !!inc/file fonts/nsd-med-ita.yml
+    - !!inc/file fonts/nsd-med-ita.yml
 #  text-offset:
 #   - 0
 #   - 0.157

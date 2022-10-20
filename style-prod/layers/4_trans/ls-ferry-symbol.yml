@@ -3,8 +3,8 @@ layout:
   symbol-placement: line
   symbol-spacing: 1000
   text-field: '{name}'
-  text-font:
-    - sans
+  text-font: !!inc/file fonts/nsd-sb-ita.yml
+#    - sans
   text-optional: true
   text-size: 8.66667
   text-letter-spacing: 0.15

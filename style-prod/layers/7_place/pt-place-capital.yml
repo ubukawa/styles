@@ -1,0 +1,92 @@
+#filter:
+#  - all
+#  - - '=='
+#    - poptyp
+#    - 1
+#  - - '!in' #This is not needed because they are filtered during the data conversion.
+#    - cartolb
+#    - Alofi
+#    - Avarua
+#    - Sri Jayewardenepura Kotte
+id: pt-place-capital
+layout:
+  icon-allow-overlap: true
+  icon-image:
+  - match
+  - - get
+    - poptyp
+  - 1
+  - PPL_National
+  - 2
+  - PPL_Alternative
+  - PPL_Territorial #3
+  icon-size: 
+    stops:
+      - - 4
+        - 0.75
+      - - 6
+        - 1
+      - - 7
+        - 0
+  text-font:
+  - step
+  - - zoom
+  - - literal 
+    - !!inc/file fonts/ns-reg.yml
+  - 6
+  - - literal 
+    - !!inc/file fonts/ns-b.yml
+  text-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - 9.33333
+  - 5
+  - 10
+  - 6
+  - 11.33333
+  - 7
+  - 12
+  text-anchor:
+  - step
+  - - zoom
+  - center # we can change here
+  - 7      # we can change here
+  - center
+  text-offset:
+  - step
+  - - zoom
+  - - literal # This can be changed
+    - - -1    #
+      - -1    #
+  - 7
+  - - literal 
+    - - 0
+      - 0
+  text-padding: 0
+  text-max-width: 15
+  text-field: '{cartolb}'
+  text-allow-overlap: true
+  text-optional: true
+maxzoom: 12
+minzoom: 4
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - 1
+  - 5
+  - 1.33333
+#    stops:
+#      - - 4
+#        - 1
+#      - - 5
+#        - 1.33333
+source: !!inc/file source.yml
+source-layer: un_popp
+type: symbol

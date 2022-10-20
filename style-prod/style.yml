@@ -317,8 +317,9 @@ layers:
   - !!inc/file layers/pt-lab-cty-reg1.yml
   - !!inc/file layers/pt-lab-cty-bold.yml
 # capitals
-  - !!inc/file layers/7_place/pt-place-capital-large.yml # ZL7-12
-  - !!inc/file layers/7_place/pt-place-capital3.yml # We can adjust text overlap in near future
-  - !!inc/file layers/7_place/pt-place-capital2.yml # We can adjust text overlap in near future
-  - !!inc/file layers/7_place/pt-place-capital1.yml # We can adjust text overlap in near future
+#  - !!inc/file layers/7_place/pt-place-capital-large.yml # ZL7-12
+#  - !!inc/file layers/7_place/pt-place-capital3.yml # We can adjust text overlap in near future
+#  - !!inc/file layers/7_place/pt-place-capital2.yml # We can adjust text overlap in near future
+#  - !!inc/file layers/7_place/pt-place-capital1.yml # We can adjust text overlap in near future
+  - !!inc/file layers/7_place/pt-place-capital.yml
 #_ssl: true
