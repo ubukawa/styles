@@ -51,15 +51,30 @@ layout:
   text-anchor:
   - step
   - - zoom
-  - center # we can change here
+  - - match
+    - - get
+      - cartolb
+    - - Roma (Rome)
+      - Vaduz
+    - left
+    - center
+#  - center # we can change here
   - 7      # we can change here
   - center
   text-offset:
   - step
   - - zoom
-  - - literal # This can be changed
-    - - -1    #
-      - -1    #
+  - - match 
+    - - get
+      - cartolb
+    - - Roma (Rome)
+      - Vaduz
+    - - literal # This can be changed
+      - - 0.7    #
+        - 0   #
+    - - literal # This can be changed
+      - - -1    #
+        - -1    #
   - 7
   - - literal 
     - - 0
