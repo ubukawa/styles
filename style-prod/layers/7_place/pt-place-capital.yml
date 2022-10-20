@@ -21,13 +21,22 @@ layout:
   - PPL_Alternative
   - PPL_Territorial #3
   icon-size: 
-    stops:
-      - - 4
-        - 0.75
-      - - 6
-        - 1
-      - - 7
-        - 0
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - 0.75
+  - 6
+  - 1
+  - 7
+  - 0
+#    stops:
+#      - - 4
+#        - 0.75
+#      - - 6
+#        - 1
+#      - - 7
+#        - 0
   text-font:
   - step
   - - zoom
