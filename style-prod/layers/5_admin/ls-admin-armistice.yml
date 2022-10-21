@@ -11,29 +11,49 @@ layout:
   line-join: round
 paint:
   line-color:
-    stops:
-      - - 3
-        - '#737B80'
-      - - 4
-        - '#454A4C'
-      - - 5
-        - '#454A4C'
-      - - 6
-        - '#393D40'
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 3
+  - '#737B80'
+  - 4
+  - '#454A4C'
+  - 5
+  - '#454A4C'
+  - 6
+  - '#393D40'
   line-dasharray:
-    stops:
-      - - 1
-        - - 17.5
-          - 10
-      - - 3
-        - - 10.6667
-          - 6
-      - - 4
-        - - 8
-          - 4.5
-      - - 6
-        - - 6
-          - 3.5
+  - step
+  - - zoom
+  - - literal
+    - - 17.5
+      - 10
+  - 3
+  - - literal
+    - - 10.6667
+      - 2
+  - 4
+  - - literal
+    - - 8
+      - 4.5
+  - 6
+  - - literal
+    - - 6
+      - 3.5
+#    stops:
+#      - - 1
+#        - - 17.5
+#          - 10
+#      - - 3
+#        - - 10.6667
+#          - 6
+#      - - 4
+#        - - 8
+#          - 4.5
+#      - - 6
+#        - - 6
+#          - 3.5
   line-width:
   - interpolate
   - - linear

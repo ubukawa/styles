@@ -3,7 +3,6 @@ filter:
   - all
   - - in
     - z_order
-    - 2
     - 3
   - - '!in'
     - ungsc_mission
@@ -26,7 +25,7 @@ layout:
 maxzoom: 15
 minzoom: 11
 paint:
-  text-color: '#4E4E4E'
+  text-color: green # '#4E4E4E'
   text-halo-color: rgba(255,255,255,0.75)
   text-halo-width: 1.33333
 source: v

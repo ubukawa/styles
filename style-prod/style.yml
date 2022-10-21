@@ -304,8 +304,9 @@ layers:
 ## 3D building - show this layer for 3D (2.5D map)
 #  - !!inc/file layers/3_area/pg-area-building-3D.yml
 #Place/city
-  - !!inc/file layers/7_place/pt-place-osm-place-1-large.yml # city
-  - !!inc/file layers/7_place/pt-place-osm-place-1.yml # city
+#  - !!inc/file layers/7_place/pt-place-osm-place-1-large.yml # city
+#  - !!inc/file layers/7_place/pt-place-osm-place-1.yml # city
+  - !!inc/file layers/7_place/pt-place-osm1.yml # city
   - !!inc/file layers/7_place/pt-place-un-unmik-1-large.yml # city
   - !!inc/file layers/7_place/pt-place-un-unmik-1.yml # city
   - !!inc/file layers/7_place/pt-place-un-global-1-large.yml #city
@@ -317,5 +318,5 @@ layers:
   - !!inc/file layers/pt-lab-cty-reg1.yml
   - !!inc/file layers/pt-lab-cty-bold.yml
 # capitals
-  - !!inc/file layers/7_place/pt-place-capital.yml
+  - !!inc/file layers/7_place/pt-place-capital.yml #will be refined in the future
 #_ssl: true
