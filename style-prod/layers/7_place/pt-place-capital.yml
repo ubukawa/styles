@@ -30,13 +30,6 @@ layout:
   - 1
   - 7
   - 0
-#    stops:
-#      - - 4
-#        - 0.75
-#      - - 6
-#        - 1
-#      - - 7
-#        - 0
   text-font:
   - step
   - - zoom
@@ -106,11 +99,6 @@ paint:
   - 1
   - 5
   - 1.33333
-#    stops:
-#      - - 4
-#        - 1
-#      - - 5
-#        - 1.33333
 source: !!inc/file source.yml
 source-layer: un_popp
 type: symbol
