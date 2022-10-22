@@ -1,9 +1,9 @@
-# city
+# Town
 filter:
   - match
   - - get
     - z_order
-  - 1 #city
+  - 2 #town
   - - match
     - - get
       - ungsc_mission
@@ -18,49 +18,44 @@ filter:
     - false
     - true
   - false
-id: pt-place-osm1
+id: pt-place-osm2
 layout:
-  icon-image: PPL_City
+  icon-image: PPL_Town
   icon-size:
   - step
   - - zoom
   - 1
-  - 8
+  - 11
   - 0
   text-field: '{name}'
   text-font:
   - step
   - - zoom
   - - literal
-    - !!inc/file fonts/nsd-med.yml
-  - 8
+    - !!inc/file fonts/nsd-reg.yml
+  - 11
   - - literal 
-    - !!inc/file fonts/nsd-sb.yml
+    - !!inc/file fonts/nsd-med.yml
   text-optional: true
   text-offset:
   - step
   - - zoom
   - - literal
     - - 0
-      - -0.3
-  - 8
+      - -0.2
+  - 11
   - - literal 
     - - 0
       - 0
-  text-size:
-  - step
-  - - zoom
-  - 10.6667
-  - 8
-  - 11.333
-  text-anchor: # bottom
+  text-size: 10.6667
+  text-anchor:
   - step
   - - zoom
   - bottom
-  - 8
+  - 11
   - center
-maxzoom: 13
-minzoom: 6
+maxzoom: 15
+minzoom: 7
 paint:
   text-color: '#343434'
   text-halo-color: rgba(255,255,255,0.75)
