@@ -1,4 +1,4 @@
-# z_order 3-7
+# z_order 3-7, 3-village, 4-hamlet,5-isolateddwelling, 6-locality, 7-suburb, 8-neighbourhood
 filter:
   - match
   - - get
