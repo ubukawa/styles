@@ -265,8 +265,9 @@ layers:
   - !!inc/file layers/pt-lab-admin3-vmc.yml
   - !!inc/file layers/pt-lab-admin2.yml
 # place/label (village center, suburb center)
-  - !!inc/file layers/7_place/pt-place-osm-place-4.yml # Suburb
-  - !!inc/file layers/7_place/pt-place-osm-place-3.yml # Village
+#  - !!inc/file layers/7_place/pt-place-osm-place-4.yml # Suburb
+#  - !!inc/file layers/7_place/pt-place-osm-place-3.yml # Village
+  - !!inc/file layers/7_place/pt-place-osm-place-345.yml
   - !!inc/file layers/7_place/pt-place-un-unmik-3.yml #Village
   - !!inc/file layers/7_place/pt-place-un-global-4.yml # Suburb
   - !!inc/file layers/7_place/pt-place-un-global-3.yml # Village
