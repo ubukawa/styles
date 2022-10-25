@@ -1,59 +1,32 @@
 # city
 filter:
   - match
-  - - get 
-    - ungsc_mission
-  - - UNMIK
-    - UNSMIL
-    - MINUSCA
-    - MONUSCO
-    - UNIFIL
-    - UNMISS
-    - UNAMID
-    - MINUJUSTH
-  - false
-  - true
-#  - match
-#  - - get
-#    - z_order
-#  - 1 #city
-#  - - match
-#    - - get
-#      - ungsc_mission
-#    - - UNMIK
-#      - UNSMIL
-#      - MINUSCA
-#      - MONUSCO
-#      - UNIFIL
-#      - UNMISS
-#      - UNAMID
-#      - MINUJUSTH
-#    - false
-#    - true
-#  - false
-id: pt-place-osm
-layout:
-  icon-image: 
-  - match
   - - get
     - z_order
-  - 1
-  - PPL_City
-  - PPL_Town #z_order =2 , other should be controled by icon size
+  - 1 #city
+  - - match
+    - - get
+      - ungsc_mission
+    - - UNMIK
+      - UNSMIL
+      - MINUSCA
+      - MONUSCO
+      - UNIFIL
+      - UNMISS
+      - UNAMID
+      - MINUJUSTH
+    - false
+    - true
+  - false
+id: pt-place-osm1
+layout:
+  icon-image: PPL_City
   icon-size:
   - step
   - - zoom
   - 1
   - 8
-  - - match
-    - - get
-      - z_order
-    - 1
-    - 0
-    - 1
-  - 11
   - 0
-#  - 0
   text-field: '{name}'
   text-font:
   - step

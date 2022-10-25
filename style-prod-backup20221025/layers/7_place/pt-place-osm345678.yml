@@ -1,0 +1,86 @@
+# z_order 3-7, 3-village, 4-hamlet,5-isolateddwelling, 6-locality, 7-suburb, 8-neighbourhood
+filter:
+  - match
+  - - get
+    - z_order
+  - - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+  - - match
+    - - get
+      - ungsc_mission
+    - - UNMIK
+      - UNSMIL
+      - MINUSCA
+      - MONUSCO
+      - UNIFIL
+      - UNMISS
+      - UNAMID
+      - MINUJUSTH
+    - false
+    - true
+  - false
+id: pt-place-osm345678
+layout:
+  text-field: '{name}'
+  text-font:
+  - match
+  - - get
+    - z_order
+  - - 7
+    - 8
+  - - literal
+    - !!inc/file fonts/nsd-ita.yml
+  - - literal 
+    - !!inc/file fonts/nsd-reg.yml
+  text-size: #9.33333 #10
+  - step
+  - - zoom
+  - 0
+  - 11
+  - - match
+    - - get
+      - z_order
+    - 3
+    - 10
+    - 0  
+  - 12
+  - - match
+    - - get
+      - z_order
+    - 3
+    - 10
+    - - 7
+      - 8
+    - 9.33333
+    - 0
+  - 14
+  - - match
+    - - get
+      - z_order
+    - 3
+    - 10
+    - 9.33333 
+  text-anchor: center
+  text-optional: true
+maxzoom: 15
+minzoom: 11
+paint:
+  text-color: #red # '#4E4E4E'
+  - match
+  - - get
+    - z_order
+  - 3 #ZL11-
+  - '#4E4E4E' #red
+  - - 7 #ZL12-
+    - 8
+  - '#686868'
+  - '#656565' #4,5,6
+  text-halo-color: rgba(255,255,255,0.7)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol

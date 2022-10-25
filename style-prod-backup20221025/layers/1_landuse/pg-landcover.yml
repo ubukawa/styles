@@ -1,0 +1,17 @@
+#filter is not necessary because the source VT has only gridcode 20, 30, 80
+id: pg-landcover
+maxzoom: 20
+minzoom: 2
+paint:
+  fill-color: 
+  - match
+  - - get
+    - gridcode
+  - 20
+  - '#DAEDD0'
+  - 30
+  - '#ECF3DD'
+  - '#F6EFEF' #80
+source: !!inc/file source.yml
+source-layer: landcover
+type: fill

@@ -1,0 +1,28 @@
+id: pg-area-building-3D
+maxzoom: !!inc/file maxz.yml
+minzoom: 12
+paint:
+  fill-extrusion-color: '#CBC5C5'
+  fill-extrusion-height:
+  - case
+  - - has
+    - height
+  - - max
+    - - to-number
+      - - get
+        - height
+    - 5
+  - - has
+    - building_levels
+  - - max
+    - - '*'
+      - - to-number
+        - - get
+          - building_levels
+      - 3.66
+    - 5
+  - 5
+  fill-extrusion-opacity: 0.7
+source: !!inc/file source.yml
+source-layer: building
+type: fill-extrusion

@@ -1,0 +1,37 @@
+filter:
+  - match
+  - - get
+    - bdytyp
+  - 4
+  - true
+  - false
+id: ls-admin-l-other
+layout:
+  icon-ignore-placement: true
+  symbol-placement: line
+  icon-image: 
+  - step
+  - - zoom
+  - ADM_Other_M
+  - 6
+  - ADM_Other_L
+  symbol-spacing: 5.6667
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 3
+  - '#737B80'
+  - 4
+  - '#454A4C'
+  - 5
+  - '#454A4C'
+  - 6
+  - '#393D40'
+source: !!inc/file source.yml
+source-layer: bndl
+type: symbol

@@ -1,0 +1,30 @@
+#Because this uses symbol, this style layer is separated.
+filter: 
+  - match
+  - - get
+    - z_order
+  - 4 #drain
+  - true
+  - false
+id: ls-hydro-water-l-drain
+layout:
+  icon-allow-overlap: true
+  icon-image: HYD_Drain
+  icon-rotation-alignment: map
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11.53
+  - 1
+  - 18.17
+  - 3
+  symbol-placement: line
+  symbol-spacing: 4
+minzoom: 13
+maxzoom: !!inc/file maxz.yml
+paint:
+  icon-color: '#C7E4F2'
+source: !!inc/file source.yml
+source-layer: water
+type: symbol

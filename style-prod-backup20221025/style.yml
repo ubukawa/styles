@@ -1,0 +1,317 @@
+version: 8
+sprite: https://dev-geoportal.dfs.un.org/unvt/sprite-rev/sprite_S
+glyphs: https://dev-geoportal.dfs.un.org/unvt/font/{fontstack}/{range}.pbf
+sources:
+  v:
+    attribution: >-
+      &copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap
+      contributors</a>, and <a href='https://www.un.org/geospatial/'>UN
+      Geospatial</a> <a
+      href='https://geoportal.un.org/arcgis/apps/sites/#/unitemaps'><img
+      src='https://geoportal.un.org/webapps/resources/LOGOS/PoweredbyUniteMaps.png'
+      alt='Powered by Unite Maps'></a> <a
+      href='http://unopengis.org/unopengis/main/main.php'><img
+      src='https://unopengis.github.io/watermark/watermark.png' alt='UN OpenGIS'
+      style='width:40px;height:40px;'></a>
+    maxzoom: 15
+    minzoom: 0
+    tiles:
+      - >-
+        https://dev-geoportal.dfs.un.org/unvt/VT-open/zxy/UniteStreetMapVector/{z}/{x}/{y}.pbf
+    type: vector
+layers:
+  - !!inc/file layers/0_base/background.yml
+  - !!inc/file layers/0_base/pg-landmass.yml
+  - !!inc/file layers/1_landuse/pg-landcover.yml #gridcode 20, 30, 80
+  - !!inc/file layers/1_landuse/pg-land-trans-area.yml
+  - !!inc/file layers/1_landuse/pg-land-urban.yml
+  - !!inc/file layers/1_landuse/pg-land-nature-m.yml # z_order 13-19 (can be merged with nature-l at VT data)
+  - !!inc/file layers/1_landuse/pg-land-nature-l.yml # z_order 1-16
+  - !!inc/file layers/3_area/pg-area-pier.yml
+  - !!inc/file layers/3_area/pg-area-military.yml
+  - !!inc/file layers/3_area/pg-area-building-shadow.yml
+  - !!inc/file layers/3_area/pg-area-building-fill.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l-halo.yml
+  - !!inc/file layers/2_hydro/ls-hydro-waterbody-outline.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l-drain.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l-canal.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-l.yml
+  - !!inc/file layers/2_hydro/ls-hydro-water-s.yml
+  - !!inc/file layers/2_hydro/pg-hydro-water-wetland.yml
+  - !!inc/file layers/2_hydro/pg-hydro-water-small.yml
+  - !!inc/file layers/2_hydro/pg-hydro-water-main.yml
+#  - !!inc/file layers/ls-coastline.yml  #This layer is edge of ocean in esri
+#  - !!inc/file layers/ls-coastline-l.yml #This layer is edge of ocean in esri
+  - !!inc/file layers/3_area/ls-area-park-halo.yml
+  - !!inc/file layers/3_area/ls-area-park.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-k.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-j.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-i.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-h.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-g.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-f.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-e.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-d.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-c.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-b.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-case-a.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-k.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-j.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-i.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-h.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-g.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-f.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-e.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-d.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-c.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-b.yml
+  - !!inc/file layers/4_trans/tunnel/ls-road-tunnel-line-a.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-k.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-j.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-i.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-h.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-g.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-f.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-e.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-d.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-c.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-b.yml
+  - !!inc/file layers/4_trans/road/ls-road-case-a.yml
+  - !!inc/file layers/4_trans/road/ls-road-line-k.yml
+  - !!inc/file layers/4_trans/road/ls-road-dash-k.yml #added
+  - !!inc/file layers/4_trans/road/ls-road-line-j.yml
+  - !!inc/file layers/4_trans/road/ls-road-dash-j.yml #added
+  - !!inc/file layers/4_trans/road/ls-road-line-i.yml
+  - !!inc/file layers/4_trans/road/ls-road-line-h.yml
+  - !!inc/file layers/4_trans/road/ls-road-line-fg.yml # link
+  - !!inc/file layers/4_trans/road/ls-road-line-e.yml # secondary
+  - !!inc/file layers/4_trans/road/ls-road-line-cd.yml #primary, secondary
+  - !!inc/file layers/4_trans/road/ls-road-line-ab.yml #motorway, trunk
+  - !!inc/file layers/4_trans/road/ls-road-line-small.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-subway-halo.yml 
+  - !!inc/file layers/4_trans/railway/ls-railway-subway-symbol.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-LRT-halo.yml #Light, Rail, Tram
+  - !!inc/file layers/4_trans/railway/ls-railway-LRT-line.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-light-dash.yml
+  - !!inc/file layers/4_trans/railway/ls-railway-rail-dash.yml
+  - !!inc/file layers/4_trans/ls-ferry.yml #using symbol for line
+  - !!inc/file layers/4_trans/runway/ls-runway-halo.yml
+  - !!inc/file layers/4_trans/runway/ls-taxiway.yml
+  - !!inc/file layers/4_trans/runway/ls-runway.yml
+  - !!inc/file layers/4_trans/runway/ls-runway-dash.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-k.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-j.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-i.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-h.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-g.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-f.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-e.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-d.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-c.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-b.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-case-a.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-k.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-j.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-i.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-h.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-g.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-f.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-e.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-d.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-c.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-b.yml
+  - !!inc/file layers/4_trans/bridge/ls-road-bridge-line-a.yml
+  - !!inc/file layers/5_admin/ls-admin-ISAOAS-halo.yml
+  - !!inc/file layers/5_admin/ls-admin-admin3.yml
+  - !!inc/file layers/5_admin/ls-admin-admin2.yml
+  - !!inc/file layers/5_admin/ls-admin-admin1.yml
+  - !!inc/file layers/5_admin/ls-admin-sovereign.yml
+  - !!inc/file layers/5_admin/ls-admin-autonomous.yml
+  - !!inc/file layers/5_admin/ls-admin-l-other.yml
+  - !!inc/file layers/5_admin/ls-admin-armistice.yml
+  - !!inc/file layers/5_admin/ls-admin-special.yml
+#  - !!inc/file layers/5_admin/ls-admin-dash.yml # as dash-array cannot use "match", we canno use this right now.
+  - !!inc/file layers/5_admin/ls-admin-international.yml
+  - !!inc/file layers/2_hydro/pg-hydro-watera-label.yml # tentatively added
+  - !!inc/file layers/2_hydro/ls-water-l-label2.yml
+  - !!inc/file layers/2_hydro/ls-water-l-label.yml
+  - !!inc/file layers/4_trans/ls-ferry-symbol.yml
+  - !!inc/file layers/pt-lab-water-l-water.yml
+  - !!inc/file layers/pt-lab-water-island.yml
+  - !!inc/file layers/pt-lab-water-bay.yml
+  - !!inc/file layers/pt-lab-water-sea.yml
+  - !!inc/file layers/pt-lab-water-ocean.yml
+#POI(restaurant,bar)
+  - !!inc/file layers/pt-poi-services-2-restaurant.yml
+  - !!inc/file layers/pt-poi-services-2-bar.yml
+  - !!inc/file layers/pt-poi-un-services-2-bar.yml
+  - !!inc/file layers/pt-poi-un-services-2-restaurant.yml
+  - !!inc/file layers/pt-poi-minusca-services-2-bar.yml
+  - !!inc/file layers/pt-poi-minusca-services-2-restaurant.yml
+#POI-fuel
+  - !!inc/file layers/pt-poi-traffic.yml
+  - !!inc/file layers/pt-poi-un-traffic.yml
+  - !!inc/file layers/pt-poi-minusca-traffic.yml
+#POI-water
+  - !!inc/file layers/pt-poi-water-storage.yml
+  - !!inc/file layers/pt-poi-water-supply.yml
+  - !!inc/file layers/pt-poi-un-water-supply.yml
+  - !!inc/file layers/pt-poi-un-water-storage.yml
+#POI-other(pharmacy,etc)
+  - !!inc/file layers/pt-poi-other-lighthouse.yml
+  - !!inc/file layers/pt-poi-other-windmill.yml
+  - !!inc/file layers/pt-poi-other-communication.yml
+  - !!inc/file layers/pt-poi-other-tower.yml
+  - !!inc/file layers/pt-poi-other-park.yml
+  - !!inc/file layers/pt-poi-other-sport.yml
+  - !!inc/file layers/pt-poi-other-amusement.yml
+  - !!inc/file layers/pt-poi-other-zoo.yml
+  - !!inc/file layers/pt-poi-other-stadium.yml
+  - !!inc/file layers/pt-poi-other-shop.yml
+  - !!inc/file layers/pt-poi-other-bank.yml
+  - !!inc/file layers/pt-poi-other-pharmacy.yml
+  - !!inc/file layers/pt-poi-un-other-zoo.yml
+  - !!inc/file layers/pt-poi-un-other-IDP.yml
+  - !!inc/file layers/pt-poi-un-other-pharmacy.yml
+  - !!inc/file layers/pt-poi-un-other-stadium.yml
+  - !!inc/file layers/pt-poi-un-other-communication.yml
+  - !!inc/file layers/pt-poi-un-other-industrial.yml
+  - !!inc/file layers/pt-poi-un-other-bank.yml
+  - !!inc/file layers/pt-poi-un-other-shop.yml
+  - !!inc/file layers/pt-poi-un-other-sport.yml
+  - !!inc/file layers/pt-poi-un-other-park.yml
+  - !!inc/file layers/pt-poi-minusca-other-zoo.yml
+  - !!inc/file layers/pt-poi-minusca-other-stadium.yml
+  - !!inc/file layers/pt-poi-minusca-other-communication.yml
+  - !!inc/file layers/pt-poi-minusca-other-bank.yml
+  - !!inc/file layers/pt-poi-minusca-other-shop.yml
+# area-park label (to be confirmed) and natural-L label
+# trans label (minor)
+  - !!inc/file layers/4_trans/road/ls-road-symbol-minor.yml
+# POI heritage
+  - !!inc/file layers/pt-poi-heritage-theatre.yml
+  - !!inc/file layers/pt-poi-heritage-museum.yml
+  - !!inc/file layers/pt-poi-heritage-monument.yml
+  - !!inc/file layers/pt-poi-heritage-castle.yml
+  - !!inc/file layers/pt-poi-heritage-archeological.yml
+  - !!inc/file layers/pt-poi-heritage-memorial.yml
+  - !!inc/file layers/pt-poi-un-heritage-cultural.yml
+  - !!inc/file layers/pt-poi-un-heritage-museum.yml
+  - !!inc/file layers/pt-poi-un-heritage-monument.yml
+  - !!inc/file layers/pt-poi-un-heritage-castle.yml
+  - !!inc/file layers/pt-poi-un-heritage-archeological.yml
+  - !!inc/file layers/pt-poi-un-heritage-memorial.yml
+  - !!inc/file layers/pt-poi-minusca-heritage-monument.yml
+  - !!inc/file layers/pt-poi-minusca-heritage-memorial.yml
+# landuse label (urban) and military label (to be developed)
+# POI worshop
+  - !!inc/file layers/pt-poi-worship-other.yml
+  - !!inc/file layers/pt-poi-worship-mosque.yml
+  - !!inc/file layers/pt-poi-worship-synagogue.yml
+  - !!inc/file layers/pt-poi-worship-church.yml
+  - !!inc/file layers/pt-poi-un-worship-mosque.yml
+  - !!inc/file layers/pt-poi-un-worship-church.yml
+  - !!inc/file layers/pt-poi-minusca-worship-mosque.yml
+  - !!inc/file layers/pt-poi-minusca-worship-church.yml
+# POI service
+  - !!inc/file layers/pt-poi-services-2-cinema.yml # not in the GeoPortal (need to check)
+  - !!inc/file layers/pt-poi-services-1-hotel.yml
+  - !!inc/file layers/pt-poi-services-1-school.yml
+  - !!inc/file layers/pt-poi-services-1-college.yml
+  - !!inc/file layers/pt-poi-services-1-hospital.yml
+  - !!inc/file layers/pt-poi-un-services-1-hotel.yml
+  - !!inc/file layers/pt-poi-un-services-1-school.yml
+  - !!inc/file layers/pt-poi-un-services-1-college.yml
+  - !!inc/file layers/pt-poi-un-services-1-hospital.yml
+  - !!inc/file layers/pt-poi-minusca-services-1-hotel.yml
+  - !!inc/file layers/pt-poi-minusca-services-1-school.yml
+  - !!inc/file layers/pt-poi-minusca-services-1-college.yml
+  - !!inc/file layers/pt-poi-minusca-services-1-hospital.yml
+# trans label (major and secondary)
+  - !!inc/file layers/4_trans/road/ls-road-symbol-secondary.yml
+  - !!inc/file layers/4_trans/road/ls-road-symbol-major.yml
+# POI-public
+  - !!inc/file layers/pt-poi-public-other.yml
+  - !!inc/file layers/pt-poi-public-courthouse.yml
+  - !!inc/file layers/pt-poi-public-embassy.yml
+  - !!inc/file layers/pt-poi-public-townhall.yml
+  - !!inc/file layers/pt-poi-public-police.yml
+  - !!inc/file layers/pt-poi-public-prison.yml
+  - !!inc/file layers/pt-poi-public-fire.yml
+  - !!inc/file layers/pt-poi-public-post.yml
+  - !!inc/file layers/pt-poi-public-ngo.yml
+  - !!inc/file layers/pt-poi-un-public-other.yml
+  - !!inc/file layers/pt-poi-un-public-military.yml
+  - !!inc/file layers/pt-poi-un-public-townhall.yml
+  - !!inc/file layers/pt-poi-un-public-embassy.yml
+  - !!inc/file layers/pt-poi-un-public-court.yml
+  - !!inc/file layers/pt-poi-un-public-police.yml
+  - !!inc/file layers/pt-poi-un-public-prison.yml
+  - !!inc/file layers/pt-poi-un-public-fire.yml
+  - !!inc/file layers/pt-poi-un-public-post.yml
+  - !!inc/file layers/pt-poi-un-public-un.yml
+  - !!inc/file layers/pt-poi-un-public-ngo.yml
+  - !!inc/file layers/pt-poi-minusca-public-other.yml
+  - !!inc/file layers/pt-poi-minusca-public-military.yml
+  - !!inc/file layers/pt-poi-minusca-public-townhall.yml
+  - !!inc/file layers/pt-poi-minusca-public-embassy.yml
+  - !!inc/file layers/pt-poi-minusca-public-police.yml
+  - !!inc/file layers/pt-poi-minusca-public-ngo.yml
+# place/label/other cnter
+  - !!inc/file layers/7_place/pt-place-un-global-5.yml   # Other center
+# label/admin2,3
+  - !!inc/file layers/pt-lab-admin3-mik.yml
+  - !!inc/file layers/pt-lab-admin3-vmc.yml
+  - !!inc/file layers/pt-lab-admin2.yml
+# place/label (village center, suburb center)
+  - !!inc/file layers/7_place/pt-place-osm345678.yml
+  - !!inc/file layers/7_place/pt-place-un-unmik-3.yml #Village
+  - !!inc/file layers/7_place/pt-place-un-global-4.yml # Suburb
+  - !!inc/file layers/7_place/pt-place-un-global-3.yml # Village
+# POI trans
+  - !!inc/file layers/pt-poi-trans-2-halt.yml
+  - !!inc/file layers/pt-poi-trans-2-tram.yml
+  - !!inc/file layers/pt-poi-trans-2-bus.yml
+  - !!inc/file layers/pt-poi-trans-1-bus.yml
+  - !!inc/file layers/pt-poi-trans-1-station.yml
+  - !!inc/file layers/pt-poi-trans-1-ferry.yml
+  - !!inc/file layers/pt-poi-un-trans-1-rail.yml
+  - !!inc/file layers/pt-poi-un-trans-1-bus.yml
+  - !!inc/file layers/pt-poi-un-trans-1-ferry.yml
+  - !!inc/file layers/pt-poi-un-trans-1-taxi.yml
+  - !!inc/file layers/pt-poi-minusca-trans-1.yml
+# places/label (town)
+  - !!inc/file layers/7_place/pt-place-osm2.yml
+  - !!inc/file layers/7_place/pt-place-un-unmik-2-large.yml  #Town
+  - !!inc/file layers/7_place/pt-place-un-unmik-2.yml #Town
+  - !!inc/file layers/7_place/pt-place-un-global-2-large.yml #Town
+  - !!inc/file layers/7_place/pt-place-un-global-2.yml #Town
+#POI helipad, airfield
+  - !!inc/file layers/pt-poi-trans-1-helipad.yml
+  - !!inc/file layers/pt-poi-trans-1-airfield.yml
+  - !!inc/file layers/pt-poi-trans-1-aerodrome.yml
+  - !!inc/file layers/pt-poi-un-trans-1-helipad.yml
+  - !!inc/file layers/pt-poi-un-trans-1-airfield.yml
+# label/admin1
+  - !!inc/file layers/pt-lab-admin1.yml
+# POI airport
+  - !!inc/file layers/pt-poi-iata.yml
+  - !!inc/file layers/pt-poi-un-airport.yml
+  - !!inc/file layers/pt-poi-minusca-airport.yml
+## 3D building - show this layer for 3D (2.5D map)
+#  - !!inc/file layers/3_area/pg-area-building-3D.yml
+#Place/city
+  - !!inc/file layers/7_place/pt-place-osm1.yml # city
+  - !!inc/file layers/7_place/pt-place-un-unmik-1-large.yml # city
+  - !!inc/file layers/7_place/pt-place-un-unmik-1.yml # city
+  - !!inc/file layers/7_place/pt-place-un-global-1-large.yml #city
+  - !!inc/file layers/7_place/pt-place-un-global-1.yml #city
+# country
+  - !!inc/file layers/pt-lab-cty-ita.yml
+  - !!inc/file layers/pt-lab-cty-ant.yml
+  - !!inc/file layers/pt-lab-cty-reg2.yml
+  - !!inc/file layers/pt-lab-cty-reg1.yml
+  - !!inc/file layers/pt-lab-cty-bold.yml
+# capitals
+  - !!inc/file layers/7_place/pt-place-capital.yml #will be refined in the future
+#_ssl: true

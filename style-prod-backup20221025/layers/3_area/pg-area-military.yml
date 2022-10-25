@@ -1,0 +1,27 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - 39 
+  - true
+  - false
+id: pg-area-military
+maxzoom: !!inc/file maxz.yml
+paint:
+  fill-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - 0
+  - 11
+  - 1
+#    stops:
+#      - - 10
+#        - 0
+#      - - 11
+#        - 1
+  fill-pattern: ARE_Military
+source: !!inc/file source.yml
+source-layer: lu_urban
+type: fill

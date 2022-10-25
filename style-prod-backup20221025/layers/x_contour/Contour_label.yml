@@ -1,0 +1,18 @@
+id: Contour_label
+type: symbol
+source: contour
+source-layer: elev
+minzoom: 12
+layout:
+  symbol-placement: line
+  symbol-spacing: 700
+  text-letter-spacing: 0.1
+  text-font:
+    - sans
+  text-field: '{contour}'
+  text-size: 9
+paint:
+  text-color: '#61674a'
+  text-halo-width: 1
+  text-halo-blur: 0.5
+  text-halo-color: '#F0F0E9'

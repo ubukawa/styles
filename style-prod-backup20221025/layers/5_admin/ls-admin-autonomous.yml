@@ -1,0 +1,21 @@
+filter:
+  - match
+  - - get 
+    - bdytyp
+  - 8
+  - true
+  - false
+id: ls-admin-autonomous
+layout:
+#  line-cap: round
+  line-join: round
+minzoom: 5
+paint:
+  line-color: '#737B80'
+  line-dasharray: 
+    - 6.66667
+    - 4
+  line-width: 1
+source: !!inc/file source.yml
+source-layer: bndl
+type: line

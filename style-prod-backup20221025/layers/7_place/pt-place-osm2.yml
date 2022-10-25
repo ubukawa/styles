@@ -1,0 +1,65 @@
+# Town
+filter:
+  - match
+  - - get
+    - z_order
+  - 2 #town
+  - - match
+    - - get
+      - ungsc_mission
+    - - UNMIK
+      - UNSMIL
+      - MINUSCA
+      - MONUSCO
+      - UNIFIL
+      - UNMISS
+      - UNAMID
+      - MINUJUSTH
+    - false
+    - true
+  - false
+id: pt-place-osm2
+layout:
+  icon-image: PPL_Town
+  icon-size:
+  - step
+  - - zoom
+  - 1
+  - 11
+  - 0
+  text-field: '{name}'
+  text-font:
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/nsd-reg.yml
+  - 11
+  - - literal 
+    - !!inc/file fonts/nsd-med.yml
+  text-optional: true
+  text-offset:
+  - step
+  - - zoom
+  - - literal
+    - - 0
+      - -0.2
+  - 11
+  - - literal 
+    - - 0
+      - 0
+  text-size: 10.6667
+  text-anchor:
+  - step
+  - - zoom
+  - bottom
+  - 11
+  - center
+maxzoom: 15
+minzoom: 7
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol

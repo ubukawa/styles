@@ -1,0 +1,14 @@
+filter:
+  - match
+  - - get
+    - fclass
+  - pier
+  - true
+  - false
+id: pg-area-pier
+maxzoom: !!inc/file maxz.yml
+paint:
+  fill-color: '#E9DCE7'
+source: !!inc/file source.yml
+source-layer: trans_area
+type: fill
