@@ -264,7 +264,6 @@ layers:
   - !!inc/file layers/pt-lab-admin3-vmc.yml
   - !!inc/file layers/pt-lab-admin2.yml
 # place/label (village center, suburb center)
-#  - !!inc/file layers/7_place/pt-place-osm345678.yml
   - !!inc/file layers/7_place/pt-place-un-unmik-3.yml #Village
   - !!inc/file layers/7_place/pt-place-un-global-4.yml # Suburb
   - !!inc/file layers/7_place/pt-place-un-global-3.yml # Village
@@ -281,7 +280,6 @@ layers:
   - !!inc/file layers/pt-poi-un-trans-1-taxi.yml
   - !!inc/file layers/pt-poi-minusca-trans-1.yml
 # places/label (town)
-#  - !!inc/file layers/7_place/pt-place-osm2.yml
   - !!inc/file layers/7_place/pt-place-un-unmik-2-large.yml  #Town
   - !!inc/file layers/7_place/pt-place-un-unmik-2.yml #Town
   - !!inc/file layers/7_place/pt-place-un-global-2-large.yml #Town
@@ -301,8 +299,7 @@ layers:
 ## 3D building - show this layer for 3D (2.5D map)
 #  - !!inc/file layers/3_area/pg-area-building-3D.yml
 #Place/city
-#  - !!inc/file layers/7_place/pt-place-osm1.yml # city
-  - !!inc/file layers/7_place/pt-place-osm.yml # city
+  - !!inc/file layers/7_place/pt-place-osm.yml # all
   - !!inc/file layers/7_place/pt-place-un-unmik-1-large.yml # city
   - !!inc/file layers/7_place/pt-place-un-unmik-1.yml # city
   - !!inc/file layers/7_place/pt-place-un-global-1-large.yml #city
