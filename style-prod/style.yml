@@ -257,15 +257,10 @@ layers:
   - !!inc/file layers/pt-poi-minusca-public-embassy.yml
   - !!inc/file layers/pt-poi-minusca-public-police.yml
   - !!inc/file layers/pt-poi-minusca-public-ngo.yml
-# place/label/other cnter
-  - !!inc/file layers/7_place/pt-place-un-global-5.yml   # Other center
 # label/admin2,3
   - !!inc/file layers/pt-lab-admin3-mik.yml
   - !!inc/file layers/pt-lab-admin3-vmc.yml
   - !!inc/file layers/pt-lab-admin2.yml
-# place/label (village center, suburb center)
-  - !!inc/file layers/7_place/pt-place-un-global-4.yml # Suburb
-  - !!inc/file layers/7_place/pt-place-un-global-3.yml # Village
 # POI trans
   - !!inc/file layers/pt-poi-trans-2-halt.yml
   - !!inc/file layers/pt-poi-trans-2-tram.yml
@@ -278,9 +273,6 @@ layers:
   - !!inc/file layers/pt-poi-un-trans-1-ferry.yml
   - !!inc/file layers/pt-poi-un-trans-1-taxi.yml
   - !!inc/file layers/pt-poi-minusca-trans-1.yml
-# places/label (town)
-  - !!inc/file layers/7_place/pt-place-un-global-2-large.yml #Town
-  - !!inc/file layers/7_place/pt-place-un-global-2.yml #Town
 #POI helipad, airfield
   - !!inc/file layers/pt-poi-trans-1-helipad.yml
   - !!inc/file layers/pt-poi-trans-1-airfield.yml
@@ -295,11 +287,10 @@ layers:
   - !!inc/file layers/pt-poi-minusca-airport.yml
 ## 3D building - show this layer for 3D (2.5D map)
 #  - !!inc/file layers/3_area/pg-area-building-3D.yml
-#Place/city
+#Place
   - !!inc/file layers/7_place/pt-place-osm.yml # all
   - !!inc/file layers/7_place/pt-place-unmik.yml # all
-  - !!inc/file layers/7_place/pt-place-un-global-1-large.yml #city
-  - !!inc/file layers/7_place/pt-place-un-global-1.yml #city
+  - !!inc/file layers/7_place/pt-place-mission.yml # all
 # country
   - !!inc/file layers/pt-lab-cty-ita.yml
   - !!inc/file layers/pt-lab-cty-ant.yml
