@@ -1,0 +1,28 @@
+filter: 
+  - match
+  - - get
+    - z_order
+  - - 29 # national park
+    - 30 #nature_reserve
+    - 31 #aboriginal_lands
+    - 32 #protected_area
+    - 33 #maritime
+  - true
+  - false
+id: ls-area-park
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: !!inc/file maxz.yml
+paint:
+  line-color: #red # '#8AB0A4', '#8CB198'
+  - match
+  - - get
+    - z_order
+  - 29
+  - '#8AB0A4'
+  - '#8CB198'
+  line-width: 0.5
+source: !!inc/file source.yml
+source-layer: area_park
+type: line

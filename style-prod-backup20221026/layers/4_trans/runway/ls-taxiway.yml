@@ -1,0 +1,41 @@
+filter:
+- match
+- - get
+  - z_order
+- 2
+- true
+- false
+id: ls-taxiway
+layout:
+  line-join: round
+paint:
+  line-color: '#A685A2'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - 1.33333
+  - 14
+  - 4
+  - 16
+  - 8.2963
+  - 18
+  - 33.1852
+  - 19
+  - 66.3704
+#    stops:
+#      - - 12
+#        - 1.33333
+#      - - 14
+#        - 4
+#      - - 16
+#        - 8.2963
+#      - - 18
+#        - 33.1852
+#      - - 19
+#        - 66.3704
+minzoom: 12
+source: !!inc/file source.yml
+source-layer: runway
+type: line

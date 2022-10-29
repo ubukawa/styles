@@ -1,0 +1,70 @@
+filter: # it can be omitted as there are only 4 z_codes
+  - match
+  - - get
+    - z_order
+  - - 1 #river
+    - 2 #stream
+#    - 3 #canal
+#    - 4 #drain
+  - true
+  - false
+id: ls-hydro-water-l #river and stream
+layout:
+  line-cap: round
+  line-join: round
+#minzoom: 7 # This is not needed because we do it at the VT level (or setting the transparency)
+maxzoom: !!inc/file maxz.yml
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 10
+  - '#C7E4F2'
+  - 11
+  - - match
+    - - get 
+      - z_order
+    - 1
+    - '#D8ECF6'
+    - '#C7E4F2'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7.22
+  - - match
+    - - get 
+      - z_order
+    - 1
+    - 1
+    - 0
+  - 10.53
+  - - match
+    - - get 
+      - z_order
+    - 1
+    - 1.333333
+    - 0
+  - 11.53
+  - - match
+    - - get 
+      - z_order
+    - 1
+    - 1.8841 #calc
+    - 2
+    - 0.88
+    - 0.666667
+  - 18.17
+  - - match
+    - - get 
+      - z_order
+    - 1
+    - 4.4444
+    - 2
+    - 3.52
+    - 2.666667
+source: !!inc/file source.yml
+source-layer: water
+type: line

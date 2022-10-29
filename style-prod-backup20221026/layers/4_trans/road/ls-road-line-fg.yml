@@ -1,0 +1,68 @@
+filter:
+- all
+- - in
+  - - get
+    - z_order
+  - - literal
+    - - 2 #f
+      - 4 #f
+      - 6 #g
+      - 8 #g
+- - '!'
+  - - 'has'
+    - tunnel
+- - '!' 
+  - - 'has'
+    - bridge
+id: ls-road-line-fg
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 6 # small roads are displayed upto ZL6
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - - match
+    - - get
+      - z_order
+    - - 2
+      - 4
+    - '#CC3D61'
+    - '#CC7A8F'
+  - 13
+  - - match
+    - - get
+      - z_order
+    - - 2
+      - 4
+    - '#CC7A8F'
+    - '#D7AEB8'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4 ###### ZL #####
+  - 0
+  - 6 ###### ZL #####
+  - 0
+  - 8 ###### ZL #####
+  - 0.4
+  - 10 ###### ZL #####
+  - 0.5
+  - 12 ###### ZL #####
+  - 0.66
+  - 13 ###### ZL #####
+  - 1
+  - 15 ###### ZL #####
+  - 2
+  - 17 ###### ZL #####
+  - 6
+  - 19 ###### ZL #####
+  - 18
+source: !!inc/file source.yml
+source-layer: road
+type: line
