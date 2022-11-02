@@ -9,13 +9,32 @@ id: ls-admin-l-other
 layout:
   icon-ignore-placement: true
   symbol-placement: line
+  icon-size: 
+  - interpolate
+  - - linear
+  - - zoom
+  - 1
+  - 0.5
+  - 3
+  - 1
+  - 4
+  - 1
   icon-image: 
   - step
   - - zoom
+  - ADM_Other_S
+  - 4
   - ADM_Other_M
   - 6
   - ADM_Other_L
-  symbol-spacing: 5.6667
+  symbol-spacing: #5.6667
+  - step
+  - - zoom
+  - 2
+  - 4
+  - 5
+  - 6
+  - 5.6667
   icon-rotation-alignment: map
   icon-allow-overlap: true
 paint:
