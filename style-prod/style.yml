@@ -258,9 +258,9 @@ layers:
   - !!inc/file layers/pt-poi-minusca-public-police.yml
   - !!inc/file layers/pt-poi-minusca-public-ngo.yml
 # label/admin2,3
-  - !!inc/file layers/pt-lab-admin3-mik.yml
-  - !!inc/file layers/pt-lab-admin3-vmc.yml
-  - !!inc/file layers/pt-lab-admin2.yml
+  - !!inc/file layers/8_label/pt-lab-admin3-mik.yml
+  - !!inc/file layers/8_label/pt-lab-admin3-vmc.yml
+  - !!inc/file layers/8_label/pt-lab-admin2.yml
 # POI trans
   - !!inc/file layers/pt-poi-trans-2-halt.yml
   - !!inc/file layers/pt-poi-trans-2-tram.yml
@@ -280,7 +280,7 @@ layers:
   - !!inc/file layers/pt-poi-un-trans-1-helipad.yml
   - !!inc/file layers/pt-poi-un-trans-1-airfield.yml
 # label/admin1
-  - !!inc/file layers/pt-lab-admin1.yml
+  - !!inc/file layers/8_label/pt-lab-admin1.yml
 # POI airport
   - !!inc/file layers/pt-poi-iata.yml
   - !!inc/file layers/pt-poi-un-airport.yml

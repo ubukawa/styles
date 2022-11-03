@@ -1,0 +1,16 @@
+id: pt-lab-admin3-mik
+layout:
+  text-field: '{region_name}'
+  text-font: !!inc/file fonts/nsd-sb-ita.yml
+  text-letter-spacing: 0.1
+  text-size: 10.6667
+  text-optional: true
+maxzoom: 12
+minzoom: 8
+paint:
+  text-color: '#828282'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: mik_bnd_lab3
+type: symbol
