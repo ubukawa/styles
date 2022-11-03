@@ -292,14 +292,8 @@ layers:
   - !!inc/file layers/7_place/pt-place-unmik.yml # all
   - !!inc/file layers/7_place/pt-place-mission.yml # all
 # country
-################################################
-#  - !!inc/file layers/pt-lab-cty-ita.yml
 #  - !!inc/file layers/pt-lab-cty-ant.yml
-#  - !!inc/file layers/pt-lab-cty-reg2.yml
-#  - !!inc/file layers/pt-lab-cty-reg1.yml
-#  - !!inc/file layers/pt-lab-cty-bold.yml
-################################################
-
+  - !!inc/file layers/8_label/pt-lab-cty.yml
 # capitals
   - !!inc/file layers/7_place/pt-place-capital.yml #will be refined in the future (top, left, bottom, right, etc.)
 #_ssl: true
