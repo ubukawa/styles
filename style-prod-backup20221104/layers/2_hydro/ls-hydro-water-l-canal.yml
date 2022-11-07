@@ -1,0 +1,27 @@
+# due to the dasharray, canal cannot be merged with river
+filter: 
+  - match
+  - - get
+    - z_order
+  - 3 #canal
+  - true
+  - false
+id: ls-hydro-water-l-canal
+minzoom: 13
+maxzoom: !!inc/file maxz.yml
+paint:
+  line-color: '#C7E4F2'
+  line-dasharray:
+    - 2.66667
+    - 2
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11.53
+  - 0.666667
+  - 18.17
+  - 2.66667
+source: !!inc/file source.yml
+source-layer: water
+type: line

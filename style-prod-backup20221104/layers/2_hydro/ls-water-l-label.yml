@@ -1,0 +1,40 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 1 #river
+#    - 2 #stream
+#    - 3 #canal
+#    - 4 #drain
+  - true
+  - false
+id: ls-water-l-label
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-field: '{name}'
+  text-font:
+#  - !!inc/file fonts/nsd-ita.yml
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/nsd-ita.yml
+  - 11
+  - - literal 
+    - !!inc/file fonts/nsd-med-ita.yml
+#  text-offset:
+#   - 0
+#   - 0.157
+  text-optional: true
+  text-size: 9.33333
+#  text-anchor: bottom
+  text-letter-spacing: 0.15
+minzoom: 9
+maxzoom: !!inc/file maxz.yml
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1
+source: !!inc/file source.yml
+source-layer: water
+type: symbol

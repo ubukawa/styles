@@ -1,0 +1,57 @@
+filter: # it can be filtered at VT creation stage.
+  - match
+  - - get
+    - z_order
+  - - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+  - true
+  - false
+id: pg-land-nature-l
+#maxzoom: 22
+maxzoom: !!inc/file maxz.yml
+paint:
+  fill-color:
+  - match
+  - - get
+    - z_order
+  - - 13
+    - 14
+  - '#F2F2DC' #farm
+  - - 5
+    - 6
+    - 15
+  - '#E2EBCF' #grass
+  - - 4
+    - 16
+  - '#F2F2E3' #heath
+  - - 7
+    - 12
+  - '#E1EDC9' #orchard
+  - - 1
+    - 3
+    - 8
+    - 10
+    - 11
+  - '#BAE3BA' #park
+  - 9
+  - '#ECE7DE' #quarry
+  - 2
+  - '#E5DFD1' #rock
+  - '#FAF9F6' #other (There should be no feature. color is just same as the landmass)
+source: !!inc/file source.yml
+source-layer: nature-l
+type: fill

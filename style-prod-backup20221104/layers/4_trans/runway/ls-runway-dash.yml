@@ -1,0 +1,34 @@
+filter:
+- match
+- - get
+  - z_order
+- 1
+- true
+- false
+id: ls-runway-dash
+layout:
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-dasharray: [5, 5]
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 1.33333
+  - 18
+  - 4.16667
+  - 19
+  - 11.1111
+#    stops:
+#      - - 16
+#        - 1.33333
+#      - - 18
+#        - 4.16667
+#      - - 19
+#        - 11.1111
+minzoom: 15.85
+source: !!inc/file source.yml
+source-layer: runway
+type: line

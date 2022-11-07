@@ -1,0 +1,36 @@
+# we do not need filter. (could possibly use a filter with "status")
+id: ls-runway-halo
+layout:
+  line-cap: square
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16 #####ZL
+  - - match
+    - - get
+      - z_order
+    - 1 #runway
+    - 32
+    - 10.6667 # taxiway z_order==2
+  - 18 ### ZL
+  - - match
+    - - get
+      - z_order
+    - 1 #runway
+    - 100
+    - 42.6667 # taxiway z_order==2
+  - 19 ### ZL
+  - - match
+    - - get
+      - z_order
+    - 1 #runway
+    - 266.667
+    - 85.3333 # taxiway z_order==2
+minzoom: 15.85
+source: !!inc/file source.yml
+source-layer: runway
+type: line

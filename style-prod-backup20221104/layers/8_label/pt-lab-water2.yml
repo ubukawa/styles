@@ -1,0 +1,32 @@
+filter:
+- match
+- - get
+  - display
+- 1
+- - match
+  - - get
+    - name
+  - - Garabogazkol Aylagy
+    - Lago de Izabal
+    - Lagune Ndogo
+    - Lagune Nkomi
+    - Ijsselmeer
+    - Rio de la Plata
+    - Zaliv Kara-Bogaz-Gol
+  - false
+  - true
+- false
+id: pt-lab-water2
+layout:
+  text-field: '{name}'
+  text-font: !!inc/file fonts/nsd-med-ita.yml
+  text-size: 9.33333
+maxzoom: 10
+minzoom: 6
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4
+source: !!inc/file source.yml
+source-layer: phyp_label
+type: symbol
