@@ -279,9 +279,9 @@ layers:
 # label/admin1
   - !!inc/file layers/8_label/pt-lab-admin1.yml
 # POI airport
-  - !!inc/file layers/pt-poi-iata.yml
-  - !!inc/file layers/pt-poi-un-airport.yml
-  - !!inc/file layers/pt-poi-minusca-airport.yml
+  - !!inc/file layers/6_poi/pt-poi-iata.yml
+  - !!inc/file layers/6_poi/pt-poi-un-airport.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-airport.yml
 ## 3D building - show this layer for 3D (2.5D map)
 #  - !!inc/file layers/3_area/pg-area-building-3D.yml
 #Place
