@@ -5,10 +5,6 @@ filter:
 - Airport
 - true
 - false
-#  - all
-#  - - '=='
-#    - feat_class
-#    - Airport
 id: pt-poi-minusca-airport
 layout:
   icon-allow-overlap: false

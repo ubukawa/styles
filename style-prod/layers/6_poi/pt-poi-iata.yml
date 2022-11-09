@@ -52,13 +52,6 @@ layout:
   - - literal
     - - 0
       - -1.2
-#    stops:
-#      - - 9
-#        - - 0
-#          - -0.75
-#      - - 11
-#        - - 0
-#          - -1.2
   text-optional: true
   text-padding: 0
   text-size:
