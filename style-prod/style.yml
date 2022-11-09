@@ -271,11 +271,11 @@ layers:
   - !!inc/file layers/pt-poi-un-trans-1-taxi.yml
   - !!inc/file layers/pt-poi-minusca-trans-1.yml
 #POI helipad, airfield
-  - !!inc/file layers/pt-poi-trans-1-helipad.yml
-  - !!inc/file layers/pt-poi-trans-1-airfield.yml
-  - !!inc/file layers/pt-poi-trans-1-aerodrome.yml
-  - !!inc/file layers/pt-poi-un-trans-1-helipad.yml
-  - !!inc/file layers/pt-poi-un-trans-1-airfield.yml
+  - !!inc/file layers/6_poi/pt-poi-trans-1-helipad.yml
+  - !!inc/file layers/6_poi/pt-poi-trans-1-airfield.yml
+  - !!inc/file layers/6_poi/pt-poi-trans-1-aerodrome.yml
+  - !!inc/file layers/6_poi/pt-poi-un-trans-1-helipad.yml
+  - !!inc/file layers/6_poi/pt-poi-un-trans-1-airfield.yml
 # label/admin1
   - !!inc/file layers/8_label/pt-lab-admin1.yml
 # POI airport
