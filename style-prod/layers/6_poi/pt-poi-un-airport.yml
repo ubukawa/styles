@@ -1,4 +1,14 @@
 filter:
+#  - match
+#  - - get
+#    - countrycode
+#  - - LIB
+#    - CAF
+#  - false
+#  - - ==
+#    - - get
+#      - type
+#    - Airport
   - all
   - - '!in'
     - countrycode
