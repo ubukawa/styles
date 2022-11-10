@@ -228,16 +228,8 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-symbol-secondary.yml
   - !!inc/file layers/4_trans/road/ls-road-symbol-major.yml
 # POI-public
-  - !!inc/file layers/pt-poi-public-other.yml
-  - !!inc/file layers/pt-poi-public-courthouse.yml
-  - !!inc/file layers/pt-poi-public-embassy.yml
-  - !!inc/file layers/pt-poi-public-townhall.yml
-  - !!inc/file layers/pt-poi-public-police.yml
-  - !!inc/file layers/pt-poi-public-prison.yml
-  - !!inc/file layers/pt-poi-public-fire.yml
-  - !!inc/file layers/pt-poi-public-post.yml
-  - !!inc/file layers/pt-poi-public-ngo.yml
   - !!inc/file layers/pt-poi-un-public-other.yml
+  - !!inc/file layers/6_poi/pt-poi-public.yml
   - !!inc/file layers/pt-poi-un-public-military.yml
   - !!inc/file layers/pt-poi-un-public-townhall.yml
   - !!inc/file layers/pt-poi-un-public-embassy.yml
@@ -260,11 +252,10 @@ layers:
   - !!inc/file layers/8_label/pt-lab-admin2.yml
 # POI trans
   - !!inc/file layers/6_poi/pt-poi-trans.yml
-  - !!inc/file layers/pt-poi-un-trans-1-rail.yml
-  - !!inc/file layers/pt-poi-un-trans-1-bus.yml
-  - !!inc/file layers/pt-poi-un-trans-1-ferry.yml
-  - !!inc/file layers/pt-poi-un-trans-1-taxi.yml
-  - !!inc/file layers/pt-poi-minusca-trans-1.yml
+  - !!inc/file layers/6_poi/pt-poi-un-trans.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-trans.yml
+# Place -Town
+
 #POI helipad, airfield
   - !!inc/file layers/6_poi/pt-poi-trans-air.yml #airfield, helipad and aerodrome
   - !!inc/file layers/6_poi/pt-poi-un-trans-air.yml #airfield, helipad
