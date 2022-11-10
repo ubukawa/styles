@@ -259,12 +259,7 @@ layers:
   - !!inc/file layers/8_label/pt-lab-admin3-vmc.yml
   - !!inc/file layers/8_label/pt-lab-admin2.yml
 # POI trans
-  - !!inc/file layers/pt-poi-trans-2-halt.yml
-  - !!inc/file layers/pt-poi-trans-2-tram.yml
-  - !!inc/file layers/pt-poi-trans-2-bus.yml
-  - !!inc/file layers/pt-poi-trans-1-bus.yml
-  - !!inc/file layers/pt-poi-trans-1-station.yml
-  - !!inc/file layers/pt-poi-trans-1-ferry.yml
+  - !!inc/file layers/6_poi/pt-poi-trans.yml
   - !!inc/file layers/pt-poi-un-trans-1-rail.yml
   - !!inc/file layers/pt-poi-un-trans-1-bus.yml
   - !!inc/file layers/pt-poi-un-trans-1-ferry.yml
@@ -275,7 +270,7 @@ layers:
   - !!inc/file layers/6_poi/pt-poi-un-trans-air.yml #airfield, helipad
 # label/admin1
   - !!inc/file layers/8_label/pt-lab-admin1.yml
-# POI airport
+# POI airport (intl)
   - !!inc/file layers/6_poi/pt-poi-un-airport.yml
   - !!inc/file layers/6_poi/pt-poi-iata.yml
   - !!inc/file layers/6_poi/pt-poi-minusca-airport.yml
