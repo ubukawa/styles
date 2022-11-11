@@ -1,35 +1,54 @@
 filter:
-- match 
+- match
 - - get
-  - ungsc_mission
-- UNMIK
+  - countrycode
+- - LIB
+  - CAF
 - false
-- - get
-  - status
-id: pt-poi-public
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Town Hall
+      - Embassy
+      - Courthouse
+      - Police Station
+      - Prison
+      - Fire Station
+      - Post Office
+      - UN
+      - NGO
+      - Military
+      - Other Public Building
+id: pt-poi-un-public
 layout:
-  icon-image:
+  icon-image: 
   - match
   - - get
-    - z_order
-  - 1 #townhall
+    - type
+  - Town Hall
   - POI_Townhall
-  - - 2 # embassy
-    - 14 # diplomatic
+  - Embassy
   - POI_Embassy
-  - 3 #courthouse
+  - Courthouse
   - POI_Court
-  - 4 #police
+  - Police Station
   - POI_Police
-  - 5 #prison
+  - Prison
   - POI_Prison
-  - 6 #fire_station
+  - Fire Station
   - POI_Fire
-  - 7 #post_office
+  - Post Office
   - POI_Post
-  - 11 #NGO
-  - POI_NGO 
-  - POI_Public #social_facility(8),government(10),public_building(12) 
+  - UN
+  - POI_UN
+  - Military
+  - POI_Military
+  - NGO
+  - POI_NGO
+  - Other Public Building
+  - POI_Public
+  - POI_Public
   icon-size:
   - interpolate
   - - linear
@@ -39,7 +58,7 @@ layout:
   - 15
   - 1
   text-anchor: top
-  text-field: '{name}'
+  text-field: '{poiname}'
   text-font: !!inc/file fonts/p-font/nsd-med.yml
   text-offset:
     - 0
@@ -75,5 +94,5 @@ paint:
   - 12
   - 1
 source: !!inc/file source.yml
-source-layer: poi_public
+source-layer: un_poi
 type: symbol

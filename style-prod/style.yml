@@ -139,6 +139,7 @@ layers:
   - !!inc/file layers/8_label/pt-lab-water2.yml
   - !!inc/file layers/8_label/pt-lab-water1.yml
 #POI(restaurant,bar)
+  - !!inc/file layers/pt-poi-services-2-cinema.yml # not in the GeoPortal (need to check) 
   - !!inc/file layers/pt-poi-services-2-restaurant.yml
   - !!inc/file layers/pt-poi-services-2-bar.yml
   - !!inc/file layers/pt-poi-un-services-2-bar.yml
@@ -211,11 +212,7 @@ layers:
   - !!inc/file layers/pt-poi-minusca-worship-mosque.yml
   - !!inc/file layers/pt-poi-minusca-worship-church.yml
 # POI service
-  - !!inc/file layers/pt-poi-services-2-cinema.yml # not in the GeoPortal (need to check)
-  - !!inc/file layers/pt-poi-services-1-hotel.yml
-  - !!inc/file layers/pt-poi-services-1-school.yml
-  - !!inc/file layers/pt-poi-services-1-college.yml
-  - !!inc/file layers/pt-poi-services-1-hospital.yml
+  - !!inc/file layers/6_poi/pt-poi-services-1.yml #hotel, school, college, hospital
   - !!inc/file layers/pt-poi-un-services-1-hotel.yml
   - !!inc/file layers/pt-poi-un-services-1-school.yml
   - !!inc/file layers/pt-poi-un-services-1-college.yml
@@ -228,24 +225,9 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-symbol-secondary.yml
   - !!inc/file layers/4_trans/road/ls-road-symbol-major.yml
 # POI-public
-  - !!inc/file layers/pt-poi-un-public-other.yml
   - !!inc/file layers/6_poi/pt-poi-public.yml
-  - !!inc/file layers/pt-poi-un-public-military.yml
-  - !!inc/file layers/pt-poi-un-public-townhall.yml
-  - !!inc/file layers/pt-poi-un-public-embassy.yml
-  - !!inc/file layers/pt-poi-un-public-court.yml
-  - !!inc/file layers/pt-poi-un-public-police.yml
-  - !!inc/file layers/pt-poi-un-public-prison.yml
-  - !!inc/file layers/pt-poi-un-public-fire.yml
-  - !!inc/file layers/pt-poi-un-public-post.yml
-  - !!inc/file layers/pt-poi-un-public-un.yml
-  - !!inc/file layers/pt-poi-un-public-ngo.yml
-  - !!inc/file layers/pt-poi-minusca-public-other.yml
-  - !!inc/file layers/pt-poi-minusca-public-military.yml
-  - !!inc/file layers/pt-poi-minusca-public-townhall.yml
-  - !!inc/file layers/pt-poi-minusca-public-embassy.yml
-  - !!inc/file layers/pt-poi-minusca-public-police.yml
-  - !!inc/file layers/pt-poi-minusca-public-ngo.yml
+  - !!inc/file layers/6_poi/pt-poi-un-public.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-public.yml
 # label/admin2,3
   - !!inc/file layers/8_label/pt-lab-admin3-mik.yml
   - !!inc/file layers/8_label/pt-lab-admin3-vmc.yml
