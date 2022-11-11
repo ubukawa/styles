@@ -1,0 +1,42 @@
+filter:
+- match
+- - get
+  - countrycode
+- - LIB
+  - CAF
+- false
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Restaurant
+      - Bar/ Nightclub
+id: pt-poi-un-services-2
+layout:
+  icon-image: POI_Restaurant
+  icon-image:
+  - match
+  - - get 
+    - type
+  - Restaurant
+  - POI_Restaurant
+  - POI_Bar
+  icon-size: 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 16
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol

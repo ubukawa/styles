@@ -1,0 +1,48 @@
+filter:
+  - match
+  - - get
+    - bdytyp
+  - 1 #international
+  - true
+  - false
+#  - all
+#  - - '=='
+#    - bdytyp
+#    - 1 #international
+id: ls-admin-international
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: 
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 3
+  - '#737B80'
+  - 4
+  - '#454A4C'
+  - 5
+  - '#454A4C'
+  - 6
+  - '#393D40'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 1
+  - 0.133333
+  - 2
+  - 0.333333
+  - 3
+  - 0.5
+  - 4
+  - 0.666667
+  - 5
+  - 1
+  - 6
+  - 1.333333
+source: !!inc/file source.yml
+source-layer: bndl
+type: line

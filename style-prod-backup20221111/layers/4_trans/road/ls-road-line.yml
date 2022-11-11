@@ -1,0 +1,96 @@
+filter:
+  - all
+  - - 'in'
+    - z_order
+    - 3
+    - 1
+    - 5
+    - 7
+    - 9
+    - 10
+    - 2
+    - 4
+    - 6
+    - 8
+    - 11
+    - 12
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 15
+    - 16
+    - 17
+    - 13
+    - 14
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+  - - '!has'
+    - tunnel
+  - - '!has'
+    - bridge
+id: ls-road-line
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 6 # small roads are displayed upto ZL6
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - - match
+    - - get
+      - z_order
+    - 3
+    - '#CC3D61'
+    - '#CC3D61'
+  - 13 ###################################
+  - '#D1899B'
+  - 14 ##################################
+  - - match
+    - - get
+      - z_order
+    - - 9
+      - 10
+    - '#DDD1D4'
+    - - 5
+      - 7
+    - '#D7AEB8'
+    - - 3
+      - 1
+    - '#D1899B'
+    - blue
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - 0.15
+  - 6
+  - 0.9
+  - 8
+  - 1.2
+  - 10
+  - 1.5
+  - 12
+  - 2
+  - 13
+  - 3
+  - 15
+  - 6
+  - 17
+  - 14
+  - 19
+  - 32
+source: v
+source-layer: road
+type: line

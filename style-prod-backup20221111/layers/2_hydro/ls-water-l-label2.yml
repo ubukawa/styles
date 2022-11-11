@@ -1,0 +1,39 @@
+filter:
+  - match
+  - - get
+    - z_order
+  - - 2 #stream
+    - 3 #canal
+  - true
+  - false
+id: ls-water-l-label2
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+#  text-field: '{name}'
+  text-field:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 2
+    - - get
+      - name
+    - ""
+  - 14
+  - - get
+    - name
+  text-font: !!inc/file fonts/nsd-ita.yml #NotoSansDisplay-Italic
+  text-optional: true
+  text-size: 9.33333
+  text-letter-spacing: 0.15
+minzoom: 13 # canal should be start from 14 (for future)
+maxzoom: !!inc/file maxz.yml
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1
+source: !!inc/file source.yml
+source-layer: water
+type: symbol

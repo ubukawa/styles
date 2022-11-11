@@ -140,7 +140,8 @@ layers:
   - !!inc/file layers/8_label/pt-lab-water1.yml
 #POI(restaurant,bar)
   - !!inc/file layers/6_poi/pt-poi-services-2.yml #restaurant and bar (cinema is added, not in the GeoPortal (need to check))
-  - !!inc/file layers/6_poi/pt-poi-un-services-2.yml
+  - !!inc/file layers/pt-poi-un-services-2-bar.yml
+  - !!inc/file layers/pt-poi-un-services-2-restaurant.yml
   - !!inc/file layers/pt-poi-minusca-services-2-bar.yml
   - !!inc/file layers/pt-poi-minusca-services-2-restaurant.yml
 #POI-fuel
@@ -210,7 +211,10 @@ layers:
   - !!inc/file layers/pt-poi-minusca-worship-church.yml
 # POI service
   - !!inc/file layers/6_poi/pt-poi-services-1.yml #hotel, school, college, hospital
-  - !!inc/file layers/6_poi/pt-poi-un-services-1.yml
+  - !!inc/file layers/pt-poi-un-services-1-hotel.yml
+  - !!inc/file layers/pt-poi-un-services-1-school.yml
+  - !!inc/file layers/pt-poi-un-services-1-college.yml
+  - !!inc/file layers/pt-poi-un-services-1-hospital.yml
   - !!inc/file layers/pt-poi-minusca-services-1-hotel.yml
   - !!inc/file layers/pt-poi-minusca-services-1-school.yml
   - !!inc/file layers/pt-poi-minusca-services-1-college.yml

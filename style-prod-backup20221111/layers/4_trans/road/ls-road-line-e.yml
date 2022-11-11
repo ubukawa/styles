@@ -1,0 +1,54 @@
+filter:
+- all
+- - in
+  - - get
+    - z_order
+  - - literal
+    - - 9
+      - 10
+- - '!'
+  - - 'has'
+    - tunnel
+- - '!' 
+  - - 'has'
+    - bridge
+id: ls-road-line-e
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 8
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - '#BAA6AB'
+  - 13
+  - '#DDD1D4'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4 ###### ZL #####
+  - 0
+  - 6 ###### ZL #####
+  - 0.45
+  - 8 ###### ZL #####
+  - 0.6
+  - 10 ###### ZL #####
+  - 0.75
+  - 12 ###### ZL #####
+  - 1
+  - 13 ###### ZL #####
+  - 1.5
+  - 15 ###### ZL #####
+  - 3
+  - 17 ###### ZL #####
+  - 8
+  - 19 ###### ZL #####
+  - 20
+source: !!inc/file source.yml
+source-layer: road
+type: line

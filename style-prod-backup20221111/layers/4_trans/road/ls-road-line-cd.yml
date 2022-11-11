@@ -1,0 +1,117 @@
+filter:
+- all
+- - in
+  - - get
+    - z_order
+  - - literal
+    - - 5 #c
+      - 7 #d
+#      - 6 #g
+#      - 8 #g
+- - '!'
+  - - 'has'
+    - tunnel
+- - '!' 
+  - - 'has'
+    - bridge
+id: ls-road-line-cd
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 6 # small roads are displayed upto ZL6
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - '#CC7A8F'
+  - 13
+  - '#D7AEB8'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 0.1 #c
+    - 0 #d,g (other)
+  - 6 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 0.6 #c 
+    - 7
+    - 0.45 #d
+    - 0 #g (other)
+  - 8 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 0.8 #c 
+    - 7
+    - 0.6 #d
+    - 0.4 #g (other)
+  - 10 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 1 #c 
+    - 7
+    - 0.75 #d
+    - 0.5 #g (other)
+  - 12 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5
+    - 1.33 #c 
+    - 7
+    - 1 #d
+    - 0.66 #g (other)
+  - 13 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 2 #c 
+    - 7
+    - 1.5 #d
+    - 1 #g (other)
+  - 15 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 4 #c 
+    - 7
+    - 3 #d
+    - 2 #g (other)
+  - 17 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5 
+    - 10 #c 
+    - 7
+    - 8 #d
+    - 6 #g (other)
+  - 19 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 5
+    - 24 #c 
+    - 7
+    - 20 #d
+    - 18 #f (other)
+source: !!inc/file source.yml
+source-layer: road
+type: line

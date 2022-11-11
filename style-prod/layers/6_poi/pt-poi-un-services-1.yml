@@ -1,0 +1,77 @@
+#hotel, school, hospital, college
+filter:
+- match
+- - get
+  - countrycode
+- - LIB
+  - CAF
+- false
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Hotel # hotel
+      - School # school
+      - Hospital # hospital
+      - College
+      - University
+id: pt-poi-un-services-1
+layout:
+  icon-image:
+  - match
+  - - get 
+    - type
+  - Hotel
+  - POI_Hotel
+  - School
+  - POI_School
+  - Hospital
+  - POI_Hospital
+  - POI_College  
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14
+  - 0.8
+  - 16
+  - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size:
+  - step
+  - - zoom
+  - 0
+  - 14
+  - 9.33333
+minzoom: 13
+paint:
+  icon-color: '#386090'
+  icon-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13 #ZL
+  - 0
+  - 14 #ZL
+  - 1
+  text-color: '#386090'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14 #ZL
+  - 0
+  - 15 #ZL
+  - 1
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol
