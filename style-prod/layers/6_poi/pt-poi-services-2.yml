@@ -1,0 +1,60 @@
+#restautrant, bar
+filter:
+- match
+- - get 
+  - z_order
+- - 6 #restautrant
+  - 7 #fast_food
+  - 8 #cafe
+  - 9 #food_court
+  - 10 #biergarten
+  - 11 #nightclub
+  - 12 #pub
+  - 13 #bar
+  - 15 #cinema (no cinema in Esri map)
+- - match
+  - - get
+    - ungsc_mission
+  - UNMIK
+  - false
+  - - get
+    - status
+- false
+id: pt-poi-services-2
+layout:
+  icon-image:
+  - match
+  - - get
+    - z_order
+  - - 6 #restautrant
+    - 7 #fast_food
+    - 8 #cafe
+    - 9 #food_court
+  - POI_Restaurant
+  - - 10 #biergarten
+    - 11 #nightclub
+    - 12 #pub
+    - 13 #bar
+  - POI_Bar
+  - 15
+  - POI_Cinema
+  - POI_Restaurant
+  icon-size: 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 16
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: poi_services
+type: symbol

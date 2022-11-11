@@ -139,9 +139,7 @@ layers:
   - !!inc/file layers/8_label/pt-lab-water2.yml
   - !!inc/file layers/8_label/pt-lab-water1.yml
 #POI(restaurant,bar)
-  - !!inc/file layers/pt-poi-services-2-cinema.yml # not in the GeoPortal (need to check) 
-  - !!inc/file layers/pt-poi-services-2-restaurant.yml
-  - !!inc/file layers/pt-poi-services-2-bar.yml
+  - !!inc/file layers/6_poi/pt-poi-services-2.yml #restaurant and bar (cinema is added, not in the GeoPortal (need to check))
   - !!inc/file layers/pt-poi-un-services-2-bar.yml
   - !!inc/file layers/pt-poi-un-services-2-restaurant.yml
   - !!inc/file layers/pt-poi-minusca-services-2-bar.yml
