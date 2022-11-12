@@ -211,10 +211,7 @@ layers:
 # POI service
   - !!inc/file layers/6_poi/pt-poi-services-1.yml #hotel, school, college, hospital
   - !!inc/file layers/6_poi/pt-poi-un-services-1.yml
-#  - !!inc/file layers/pt-poi-minusca-services-1-hotel.yml
-#  - !!inc/file layers/pt-poi-minusca-services-1-school.yml
-#  - !!inc/file layers/pt-poi-minusca-services-1-college.yml
-#  - !!inc/file layers/pt-poi-minusca-services-1-hospital.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-services-1.yml
 # trans label (major and secondary)
   - !!inc/file layers/4_trans/road/ls-road-symbol-secondary.yml
   - !!inc/file layers/4_trans/road/ls-road-symbol-major.yml
