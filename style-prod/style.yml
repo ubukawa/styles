@@ -141,8 +141,7 @@ layers:
 #POI(restaurant,bar)
   - !!inc/file layers/6_poi/pt-poi-services-2.yml #restaurant and bar (cinema is added, not in the GeoPortal (need to check))
   - !!inc/file layers/6_poi/pt-poi-un-services-2.yml
-  - !!inc/file layers/pt-poi-minusca-services-2-bar.yml
-  - !!inc/file layers/pt-poi-minusca-services-2-restaurant.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-services-2.yml
 #POI-fuel
   - !!inc/file layers/pt-poi-traffic.yml
   - !!inc/file layers/pt-poi-un-traffic.yml
