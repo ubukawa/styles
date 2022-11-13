@@ -199,10 +199,7 @@ layers:
   - !!inc/file layers/pt-poi-minusca-heritage-memorial.yml
 # landuse label (urban) and military label (to be developed)
 # POI worshop
-  - !!inc/file layers/pt-poi-worship-other.yml
-  - !!inc/file layers/pt-poi-worship-mosque.yml
-  - !!inc/file layers/pt-poi-worship-synagogue.yml
-  - !!inc/file layers/pt-poi-worship-church.yml
+  - !!inc/file layers/6_poi/pt-poi-worship.yml
   - !!inc/file layers/pt-poi-un-worship-mosque.yml
   - !!inc/file layers/pt-poi-un-worship-church.yml
   - !!inc/file layers/pt-poi-minusca-worship-mosque.yml

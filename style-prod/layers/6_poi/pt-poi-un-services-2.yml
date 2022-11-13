@@ -13,7 +13,6 @@ filter:
       - Bar/ Nightclub
 id: pt-poi-un-services-2
 layout:
-  icon-image: POI_Restaurant
   icon-image:
   - match
   - - get 
