@@ -152,19 +152,7 @@ layers:
   - !!inc/file layers/pt-poi-un-water-supply.yml
   - !!inc/file layers/pt-poi-un-water-storage.yml
 #POI-other(pharmacy,etc)
-#  - !!inc/file layers/pt-poi-other-lighthouse.yml
-#  - !!inc/file layers/pt-poi-other-windmill.yml
-#  - !!inc/file layers/pt-poi-other-communication.yml
-#  - !!inc/file layers/pt-poi-other-tower.yml
-#  - !!inc/file layers/pt-poi-other-park.yml
-#  - !!inc/file layers/pt-poi-other-sport.yml
-#  - !!inc/file layers/pt-poi-other-amusement.yml
-#  - !!inc/file layers/pt-poi-other-zoo.yml
-#  - !!inc/file layers/pt-poi-other-stadium.yml
-#  - !!inc/file layers/pt-poi-other-shop.yml
-#  - !!inc/file layers/pt-poi-other-bank.yml
-#  - !!inc/file layers/pt-poi-other-pharmacy.yml
-  - !!inc/file layers/6_poi/pt-poi-other.yml
+  - !!inc/file layers/6_poi/pt-poi-other.yml #pharmacy, bank, shop,stadium, zoo, amusement, sport, park, tower, communication, windmill lighthouse
   - !!inc/file layers/pt-poi-un-other-zoo.yml
   - !!inc/file layers/pt-poi-un-other-IDP.yml
   - !!inc/file layers/pt-poi-un-other-pharmacy.yml
