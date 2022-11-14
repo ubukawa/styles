@@ -42,7 +42,6 @@ paint:
   icon-color: '#3D9CCC'
   text-color: '#3D9CCC'
   text-halo-color: "rgba(255,255,255,0.75)"
-  text-halo-color: "rgba(255,255,255,0.75)"
   text-opacity:
   - interpolate
   - - linear
