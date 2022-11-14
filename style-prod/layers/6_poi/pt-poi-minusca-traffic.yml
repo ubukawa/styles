@@ -1,8 +1,10 @@
 filter:
-  - all
-  - - '=='
-    - feat_class
-    - Fuel Station
+- match
+- - get
+  - feat_class
+- Fuel Station
+- true
+- false
 id: pt-poi-minusca-traffic
 layout:
   icon-image: POI_Fuel
@@ -10,6 +12,6 @@ layout:
 minzoom: 14
 paint:
   icon-color: '#CC3D61'
-source: v
+source: !!inc/file source.yml
 source-layer: poi_minusca
 type: symbol

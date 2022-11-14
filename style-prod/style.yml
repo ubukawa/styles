@@ -143,14 +143,12 @@ layers:
   - !!inc/file layers/6_poi/pt-poi-un-services-2.yml
   - !!inc/file layers/6_poi/pt-poi-minusca-services-2.yml
 #POI-fuel
-  - !!inc/file layers/pt-poi-traffic.yml
-  - !!inc/file layers/pt-poi-un-traffic.yml
-  - !!inc/file layers/pt-poi-minusca-traffic.yml
+  - !!inc/file layers/6_poi/pt-poi-traffic.yml
+  - !!inc/file layers/6_poi/pt-poi-un-traffic.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-traffic.yml
 #POI-water
-  - !!inc/file layers/pt-poi-water-storage.yml
-  - !!inc/file layers/pt-poi-water-supply.yml
-  - !!inc/file layers/pt-poi-un-water-supply.yml
-  - !!inc/file layers/pt-poi-un-water-storage.yml
+  - !!inc/file layers/6_poi/pt-poi-water.yml
+  - !!inc/file layers/6_poi/pt-poi-un-water.yml
 #POI-other(pharmacy,etc)
   - !!inc/file layers/6_poi/pt-poi-other.yml #pharmacy, bank, shop,stadium, zoo, amusement, sport, park, tower, communication, windmill lighthouse
   - !!inc/file layers/6_poi/pt-poi-un-other.yml #zoo,IDP, pharmacy, stadium, communication, industrial, bank, shop, sport, park

@@ -1,11 +1,11 @@
-filter:
-  - all
-  - - '!='
-    - ungsc_mission
-    - UNMIK
-  - - '=='
-    - fclass
-    - fuel
+filter: #fclass is fuel, z_order is 1.
+- match
+- - get
+  - ungsc_mission
+- UNMIK
+- false
+- - get
+  - status
 id: pt-poi-traffic
 layout:
   icon-image: POI_Fuel
@@ -13,6 +13,6 @@ layout:
 minzoom: 14
 paint:
   icon-color: '#CC3D61'
-source: v
+source: !!inc/file source.yml
 source-layer: poi_traffic
 type: symbol
