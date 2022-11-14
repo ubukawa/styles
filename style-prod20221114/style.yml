@@ -153,8 +153,21 @@ layers:
   - !!inc/file layers/pt-poi-un-water-storage.yml
 #POI-other(pharmacy,etc)
   - !!inc/file layers/6_poi/pt-poi-other.yml #pharmacy, bank, shop,stadium, zoo, amusement, sport, park, tower, communication, windmill lighthouse
-  - !!inc/file layers/6_poi/pt-poi-un-other.yml #zoo,IDP, pharmacy, stadium, communication, industrial, bank, shop, sport, park
-  - !!inc/file layers/6_poi/pt-poi-minusca-other.yml #zoo,stadium,communication,bank,shop
+  - !!inc/file layers/pt-poi-un-other-zoo.yml
+  - !!inc/file layers/pt-poi-un-other-IDP.yml
+  - !!inc/file layers/pt-poi-un-other-pharmacy.yml
+  - !!inc/file layers/pt-poi-un-other-stadium.yml
+  - !!inc/file layers/pt-poi-un-other-communication.yml
+  - !!inc/file layers/pt-poi-un-other-industrial.yml
+  - !!inc/file layers/pt-poi-un-other-bank.yml
+  - !!inc/file layers/pt-poi-un-other-shop.yml
+  - !!inc/file layers/pt-poi-un-other-sport.yml
+  - !!inc/file layers/pt-poi-un-other-park.yml
+  - !!inc/file layers/pt-poi-minusca-other-zoo.yml
+  - !!inc/file layers/pt-poi-minusca-other-stadium.yml
+  - !!inc/file layers/pt-poi-minusca-other-communication.yml
+  - !!inc/file layers/pt-poi-minusca-other-bank.yml
+  - !!inc/file layers/pt-poi-minusca-other-shop.yml
 # area-park label (to be confirmed) and natural-L label
 # trans label (minor)
   - !!inc/file layers/4_trans/road/ls-road-symbol-minor.yml

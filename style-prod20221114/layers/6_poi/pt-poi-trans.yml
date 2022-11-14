@@ -1,0 +1,112 @@
+## bus, ferry, rail, stop-R,T,B
+filter:
+- match
+- - get
+  - z_order
+- - 3 #bus_station
+  - 4 #ferry_terminal
+  - 8 # station
+  - 10 # bus_stop(B)
+  - 9 #halt (R)
+  - 15 # stop  (R)
+  - 2 #tram_stop (T)
+  - 12 #stop position (T)
+- - get
+  - status
+#- - '=='
+#  - - get
+#    - status
+#  - true
+- false
+id: pt-poi-trans
+layout:
+  icon-allow-overlap: false
+  icon-image: # POI_Rail
+  - match
+  - - get
+    - z_order
+  - 3 #bus_station
+  - POI_Bus
+  - 4 #ferry
+  - POI_Ferry
+  - 8 #station
+  - POI_Rail
+  - 10 #bus_stop
+  - POI_Stop_B
+  - - 9 #halt
+    - 15 #stop
+  - POI_Stop_R
+  - - 2 #tram_stop
+    - 12 #stop position
+  - POI_Stop_T
+  - POI_Rail
+  icon-optional: false
+  icon-padding: 0
+  icon-size:
+#  - interpolate
+#  - - linear
+  - step
+  - - zoom
+#  - 13 #ZL
+  - - match
+    - - get
+      - z_order
+    - - 3
+      - 4
+      - 8 
+    - 1
+    - 0
+  - 14 #ZL
+  - - match
+    - - get
+      - z_order
+    - - 3
+      - 4
+      - 8 
+    - 1.2
+    - 0
+  - 16 #ZL
+  - - match
+    - - get
+      - z_order
+    - - 3
+      - 4
+      - 8 
+    - 1.2
+    - 1
+  - 17 #ZL
+  - 1.2
+  text-anchor: bottom
+  text-field: # '{name}'
+  - match
+  - - get
+    - z_order
+  - - 3
+    - 4
+    - 8 
+  - - get
+    - name
+  - ''
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - -1
+  text-optional: true
+  text-size: 10.6667
+minzoom: 10
+paint:
+  icon-color: '#802677'
+  text-color: '#802677'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13 #ZL
+  - 0
+  - 14 #ZL
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_trans
+type: symbol

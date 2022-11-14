@@ -1,0 +1,16 @@
+id: pt-lab-admin3-vmc
+layout:
+  text-field: '{nombre_ver}'
+  text-font: !!inc/file fonts/nsd-sb-ita.yml
+  text-letter-spacing: 0.1
+  text-size: 10.6667
+  text-optional: true
+maxzoom: 15
+minzoom: 12
+paint:
+  text-color: '#828282'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: vmc_bnd_lab3
+type: symbol

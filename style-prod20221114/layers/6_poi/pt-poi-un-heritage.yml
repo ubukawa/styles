@@ -12,7 +12,7 @@ filter:
     - - Museum #POI_Museum
       - Archeological; Ruins #POI_Archeological
       - Castle; Fort #POI_Castle
-      - Cultural #POI_Cultural
+      - Cultural @POI_Cultural
       - Cemetery #POI_Memorial
       - Memorial #POI_Memorial
       - Monument #POI_Monument

@@ -1,0 +1,82 @@
+filter:
+- match
+- - get
+  - countrycode
+- - LIB
+  - CAF
+- false
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Helipad
+      - Airfield
+#  - all
+#  - - '!in'
+#    - countrycode
+#    - LIB
+#    - CAF
+#  - - 'in'
+#    - type
+#    - Helipad
+#    - Airfield
+id: pt-poi-un-trans-air
+layout:
+  icon-allow-overlap: false
+  icon-image: 
+  - match
+  - - get
+    - type
+  - Helipad
+  - POI_Helipad
+  - POI_Airfield
+  icon-optional: false
+  icon-padding: 0
+  #icon-size: 1
+  icon-size: #1
+  - interpolate
+  - - linear
+  - - zoom
+  - 10 #ZL
+  - 1
+  - 11 #ZL
+  - - match
+    - - get
+      - type
+    - Helipad # helipad
+    - 1
+    - 1.2 # other (Airfiled)
+  - 12
+  - 1.2
+  text-anchor: bottom
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - -1
+  text-optional: true
+  text-size: 10.6667
+minzoom: 10
+paint:
+  icon-color: '#802677'
+  text-color: '#802677'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10 #ZL
+  - 0
+  - 11 #ZL
+  - - match
+    - - get
+      - type
+    - Helipad #helipad
+    - 0
+    - 1
+  - 12 #ZL
+  - 1
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol

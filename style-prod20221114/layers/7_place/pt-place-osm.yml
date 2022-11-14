@@ -1,0 +1,195 @@
+# z_order --> 1 to 8
+filter:
+  - match
+  - - get 
+    - ungsc_mission
+  - - UNMIK
+    - UNSMIL
+    - MINUSCA
+    - MONUSCO
+    - UNIFIL
+    - UNMISS
+    - UNAMID
+    - MINUJUSTH
+  - false
+  - true
+id: pt-place-osm
+layout:
+  icon-image: 
+  - match
+  - - get
+    - z_order
+  - 1
+  - PPL_City
+  - PPL_Town #z_order =2 , other should be controled by icon size
+  icon-size:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 1 #city
+    - 1
+    - 0 # only town (z_order 2) comes at this ZL though
+  - 7
+  - - match
+    - - get
+      - z_order
+    - - 1 # city, town
+      - 2 
+    - 1  
+    - 0 # actually, no other z_order at this scale
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 1 # city fade out
+    - 0 
+    - 2 # town continues
+    - 1  
+    - 0 # actually, no other z_order at this scale
+  - 11
+  - 0 # town fade out
+  text-field: '{name}'
+  text-font:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 1
+    - - literal
+      - !!inc/file fonts/nsd-med.yml
+    - - literal
+      - !!inc/file fonts/nsd-reg.yml
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 1
+    - - literal
+      - !!inc/file fonts/nsd-sb.yml
+    - - literal
+      - !!inc/file fonts/nsd-reg.yml
+  - 11
+  - - match
+    - - get
+      - z_order
+    - 1
+    - - literal
+      - !!inc/file fonts/nsd-sb.yml
+    - 2
+    - - literal
+      - !!inc/file fonts/nsd-med.yml
+    - - 3
+      - 4
+      - 5
+      - 6
+    - - literal
+      - !!inc/file fonts/nsd-reg.yml
+    - - literal
+      - !!inc/file fonts/nsd-ita.yml
+  text-optional: true
+  text-offset:
+  - step
+  - - zoom
+  - - literal
+    - - 0
+      - -0.3
+  - 7
+  - - match
+    - - get
+      - z_order
+    - 1
+    - - literal
+      - - 0
+        - -0.3
+    - - literal
+      - - 0
+        - -0.2
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 2
+    - - literal
+      - - 0
+        - -0.2
+    - - literal
+      - - 0
+        - 0
+  - 11
+  - - literal 
+    - - 0
+      - 0
+  text-size:
+  - step
+  - - zoom
+  - 10.6667
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 1
+    - 11.333
+    - 2
+    - 10.6667
+    - 3
+    - 10
+    - 9.33333 #4,5,6,7,8
+  - 11
+  - - match
+    - - get
+      - z_order
+    - 1
+    - 0
+    - 2
+    - 10.6667
+    - 3
+    - 10
+    - 9.33333 #4,5,6,7,8
+  - 13
+  - - match
+    - - get
+      - z_order
+    - - 1
+      - 2
+    - 0
+    - 3
+    - 10
+    - 9.33333 #4,5,6,7,8
+  text-anchor: # bottom
+  - step
+  - - zoom
+  - bottom
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 1
+    - center
+    - bottom
+  - 11
+  - center
+#maxzoom: 13
+minzoom: 6
+paint:
+  text-color: #'#343434'
+  - match
+  - - get
+    - z_order
+  - - 1
+    - 2
+  - '#343434'
+  - 3
+  - '#4E4E4E'
+  - - 4
+    - 5
+    - 6
+  - '#656565'
+  - '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol
