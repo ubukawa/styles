@@ -152,18 +152,19 @@ layers:
   - !!inc/file layers/pt-poi-un-water-supply.yml
   - !!inc/file layers/pt-poi-un-water-storage.yml
 #POI-other(pharmacy,etc)
-  - !!inc/file layers/pt-poi-other-lighthouse.yml
-  - !!inc/file layers/pt-poi-other-windmill.yml
-  - !!inc/file layers/pt-poi-other-communication.yml
-  - !!inc/file layers/pt-poi-other-tower.yml
-  - !!inc/file layers/pt-poi-other-park.yml
-  - !!inc/file layers/pt-poi-other-sport.yml
-  - !!inc/file layers/pt-poi-other-amusement.yml
-  - !!inc/file layers/pt-poi-other-zoo.yml
-  - !!inc/file layers/pt-poi-other-stadium.yml
-  - !!inc/file layers/pt-poi-other-shop.yml
-  - !!inc/file layers/pt-poi-other-bank.yml
-  - !!inc/file layers/pt-poi-other-pharmacy.yml
+#  - !!inc/file layers/pt-poi-other-lighthouse.yml
+#  - !!inc/file layers/pt-poi-other-windmill.yml
+#  - !!inc/file layers/pt-poi-other-communication.yml
+#  - !!inc/file layers/pt-poi-other-tower.yml
+#  - !!inc/file layers/pt-poi-other-park.yml
+#  - !!inc/file layers/pt-poi-other-sport.yml
+#  - !!inc/file layers/pt-poi-other-amusement.yml
+#  - !!inc/file layers/pt-poi-other-zoo.yml
+#  - !!inc/file layers/pt-poi-other-stadium.yml
+#  - !!inc/file layers/pt-poi-other-shop.yml
+#  - !!inc/file layers/pt-poi-other-bank.yml
+#  - !!inc/file layers/pt-poi-other-pharmacy.yml
+  - !!inc/file layers/6_poi/pt-poi-other.yml
   - !!inc/file layers/pt-poi-un-other-zoo.yml
   - !!inc/file layers/pt-poi-un-other-IDP.yml
   - !!inc/file layers/pt-poi-un-other-pharmacy.yml
@@ -184,14 +185,8 @@ layers:
   - !!inc/file layers/4_trans/road/ls-road-symbol-minor.yml
 # POI heritage
   - !!inc/file layers/6_poi/pt-poi-heritage.yml #theatre, museum, monument, castle, archeological, memorial
-  - !!inc/file layers/pt-poi-un-heritage-cultural.yml
-  - !!inc/file layers/pt-poi-un-heritage-museum.yml
-  - !!inc/file layers/pt-poi-un-heritage-monument.yml
-  - !!inc/file layers/pt-poi-un-heritage-castle.yml
-  - !!inc/file layers/pt-poi-un-heritage-archeological.yml
-  - !!inc/file layers/pt-poi-un-heritage-memorial.yml
-  - !!inc/file layers/pt-poi-minusca-heritage-monument.yml
-  - !!inc/file layers/pt-poi-minusca-heritage-memorial.yml
+  - !!inc/file layers/6_poi/pt-poi-un-heritage.yml
+  - !!inc/file layers/6_poi/pt-poi-minusca-heritage.yml
 # landuse label (urban) and military label (to be developed)
 # POI worshop
   - !!inc/file layers/6_poi/pt-poi-worship.yml
