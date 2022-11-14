@@ -1,0 +1,53 @@
+filter:
+- match
+- - get 
+  - ungsc_mission
+- UNMIK
+- false
+- true
+id: pt-poi-heritage
+layout:
+  icon-image:
+  - match
+  - - get
+    - z_order
+  - 1 #theatre
+  - POI_Theatre
+  - 2 #museum
+  - POI_Museum
+  - - 3 #grave_yard
+    - 5 #memorial
+    - 10 #cemetery
+  - POI_Memorial
+  - 4 #monument
+  - POI_Monument
+  - - 6 #castle
+    - 7 #fort
+  - POI_Castle
+  - POI_Archeological #(8, 9 ruins)
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0.8
+  - 16
+  - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#894444'
+  text-color: '#894444'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: poi_heritage
+type: symbol

@@ -183,12 +183,7 @@ layers:
 # trans label (minor)
   - !!inc/file layers/4_trans/road/ls-road-symbol-minor.yml
 # POI heritage
-  - !!inc/file layers/pt-poi-heritage-theatre.yml
-  - !!inc/file layers/pt-poi-heritage-museum.yml
-  - !!inc/file layers/pt-poi-heritage-monument.yml
-  - !!inc/file layers/pt-poi-heritage-castle.yml
-  - !!inc/file layers/pt-poi-heritage-archeological.yml
-  - !!inc/file layers/pt-poi-heritage-memorial.yml
+  - !!inc/file layers/6_poi/pt-poi-heritage.yml #theatre, museum, monument, castle, archeological, memorial
   - !!inc/file layers/pt-poi-un-heritage-cultural.yml
   - !!inc/file layers/pt-poi-un-heritage-museum.yml
   - !!inc/file layers/pt-poi-un-heritage-monument.yml
