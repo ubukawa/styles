@@ -8,7 +8,7 @@
       "maxzoom": 15,
       "minzoom": 0,
       "tiles": [
-        "https://dev-geoportal.dfs.un.org/unvt/VT-open/zxy/UniteStreetMapVector/{z}/{x}/{y}.pbf"
+        "https://dev-geoportal.dfs.un.org/unvt/VT/zxy/UniteStreetMapVector/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
