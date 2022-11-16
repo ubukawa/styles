@@ -1,0 +1,72 @@
+filter:
+- match
+- - get
+  - countrycode
+- - LIB
+  - CAF
+- false
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Commercial #POI_Shop
+      - Bank #POI_Bank
+      - Communication, Communication Tower #POI_Communication
+      - IDP / Refugee #POI_IDP
+      - Industrial #POI_Industrial
+      - Park #POI_Park
+      - Pharmacy #POI_Pharmacy
+      - Sport #POI_Sport
+      - Stadium #POI_Stadium
+      - Zoo #POI_Zoo
+id: pt-poi-un-other
+layout:
+  icon-image:
+  - match
+  - - get
+    - type
+  - Commercial 
+  - POI_Shop
+  - Bank 
+  - POI_Bank
+  - Communication, Communication Tower 
+  - POI_Communication
+  - IDP / Refugee 
+  - POI_IDP
+  - Industrial 
+  - POI_Industrial
+  - Park 
+  - POI_Park
+  - Pharmacy 
+  - POI_Pharmacy
+  - Sport 
+  - POI_Sport
+  - Stadium 
+  - POI_Stadium
+  - POI_Zoo
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0.8
+  - 16
+  - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 14.85
+paint:
+  icon-color: '#448970'
+  text-color: '#448970'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol

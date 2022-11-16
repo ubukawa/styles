@@ -1,0 +1,55 @@
+filter:
+- match
+- - get
+  - countrycode
+- - LIB
+  - CAF
+- false
+- - 'in'
+  - - get
+    - type
+  - - literal
+    - - Water Supply
+      - Water Storage
+id: pt-poi-un-water
+layout:
+  icon-image:
+  - match
+  - - get
+    - type
+  - Water Supply
+  - POI_Supply
+  - POI_Storage #Water Storage 
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 0.8
+  - 17
+  - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#3D9CCC'
+  text-color: '#3D9CCC'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0
+  - 16
+  - 1
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol

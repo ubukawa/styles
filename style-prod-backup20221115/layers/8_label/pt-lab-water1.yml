@@ -1,0 +1,90 @@
+filter:
+  - match
+  - - get
+    - annotationclassid
+  - - 0 #ocean
+    - 1 # north pacific ocean at E165 N23
+    - 2 # sea
+    - 3 # gulf
+    - 4 # local sea (red sea, caspian sea)
+    - 5 # Mediterraniean Sea (only this)
+    - 6 # islands
+  - true
+  - false
+#  - any
+#  - - '=='
+#    - annotationclassid
+#    - 0
+id: pt-lab-water
+layout:
+  text-field: '{textstring}'
+  text-optional: true
+  text-letter-spacing: 
+  - match
+  - - get
+    - annotationclassid
+  - 0
+  - 0.2
+  - 0
+  text-font:
+  - match 
+  - - get 
+    - annotationclassid
+  - - 0 #Ocean
+    - 6 #island
+  - - literal 
+    - !!inc/file fonts/nsd-sb-ita.yml
+  - - literal 
+    - !!inc/file fonts/nsd-med-ita.yml
+  text-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - - match
+    - - get 
+      - annotationclassid
+    - 0 # ocean
+    - 10.6667
+    - 3 #gulf
+    - 10
+    - 9.33333
+  - 7
+  - - match
+    - - get 
+      - annotationclassid
+    - 0 # ocean
+    - 14
+    - 3 #gulf
+    - 12.3333
+    - - 2
+      - 4
+      - 5
+    - 11.33333
+    - 9.33333
+maxzoom: 10
+minzoom: 0.56
+paint:
+  text-color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4
+  - - match
+    - - get
+      - annotationclassid
+    - 6
+    - rgba(113,126,133,0.75)
+    - '#609FBF'
+  - 7
+  - - match
+    - - get
+      - annotationclassid
+    - 6
+    - rgba(113,126,133,0.75)
+    - '#3D9CCC'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4
+source: !!inc/file source.yml
+source-layer: lab_water
+type: symbol
