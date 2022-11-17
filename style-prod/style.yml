@@ -176,15 +176,24 @@ layers:
   - !!inc/file layers/6_poi/pt-poi-public.yml
   - !!inc/file layers/6_poi/pt-poi-un-public.yml
   - !!inc/file layers/6_poi/pt-poi-minusca-public.yml
+#Places(other_center)
+  - !!inc/file layers/7_place/pt-place-osm-other_center.yml
+#  - !!inc/file layers/7_place/pt-place-mission-other_center.yml 
 # label/admin2,3
   - !!inc/file layers/8_label/pt-lab-admin3-mik.yml
   - !!inc/file layers/8_label/pt-lab-admin3-vmc.yml
   - !!inc/file layers/8_label/pt-lab-admin2.yml
+#Places(Suburb and villege)
+  - !!inc/file layers/7_place/pt-place-osm-suburb_village.yml
+#  - !!inc/file layers/7_place/pt-place-mission-suburb_village.yml 
 # POI trans
   - !!inc/file layers/6_poi/pt-poi-trans.yml
   - !!inc/file layers/6_poi/pt-poi-un-trans.yml
   - !!inc/file layers/6_poi/pt-poi-minusca-trans.yml
-# Place -Town
+#Place(town)
+  - !!inc/file layers/7_place/pt-place-osm-town.yml
+  - !!inc/file layers/7_place/pt-place-unmik-town.yml 
+#  - !!inc/file layers/7_place/pt-place-mission-town.yml 
 
 #POI helipad, airfield
   - !!inc/file layers/6_poi/pt-poi-trans-air.yml #airfield, helipad and aerodrome
@@ -197,10 +206,10 @@ layers:
   - !!inc/file layers/6_poi/pt-poi-minusca-airport.yml
 ## 3D building - show this layer for 3D (2.5D map)
 #  - !!inc/file layers/3_area/pg-area-building-3D.yml
-#Place
-  - !!inc/file layers/7_place/pt-place-osm.yml # all
-  - !!inc/file layers/7_place/pt-place-unmik.yml # all
-  - !!inc/file layers/7_place/pt-place-mission.yml # all
+#Place(city)
+  - !!inc/file layers/7_place/pt-place-osm-city.yml # all
+  - !!inc/file layers/7_place/pt-place-unmik-city.yml # all
+  - !!inc/file layers/7_place/pt-place-mission-city.yml # all
 # country
 #  - !!inc/file layers/pt-lab-cty-ant.yml
   - !!inc/file layers/8_label/pt-lab-cty.yml

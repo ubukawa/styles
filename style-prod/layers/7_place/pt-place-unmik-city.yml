@@ -3,39 +3,22 @@ filter:
   - - get 
     - countrycode
   - XKX # There is only Type "City" and "Town" in this data
-  - true
+  - - '=='
+    - - get
+      - type
+    - City
   - false
-id: pt-place-unmik
+id: pt-place-unmik-city
 layout:
-  icon-image: 
-  - match
-  - - get
-    - Type
-  - City
-  - PPL_City
-  - PPL_Town #Town> other should be controled by icon size
+  icon-image: PPL_City
   icon-size:
   - step
   - - zoom
   - 0
   - 6
-  - - match
-    - - get
-      - type
-    - City #city
-    - 1
-    - 0 # only town (z_order 2) comes at this ZL though
+  - 1
   - 9
   - 0
-  - 11
-  - - match
-    - - get
-      - type
-    - Town #town
-    - 1
-    - 0 # only town (z_order 2) comes at this ZL though
-  - 12
-  - 0 # town fade out
   text-field: |-
     {label_1}
     {label_2}
@@ -45,26 +28,8 @@ layout:
   - - literal
     - !!inc/file fonts/nsd-med.yml
   - 9 #ZL9
-  - - match
-    - - get
-      - type
-    - City
-    - - literal
-      - !!inc/file fonts/nsd-sb.yml
-    - - literal
-      - !!inc/file fonts/nsd-reg.yml
-  - 12 #ZL12
-  - - match
-    - - get
-      - type
-    - City
-    - - literal
-      - !!inc/file fonts/nsd-sb.yml
-    - Town
-    - - literal
-      - !!inc/file fonts/nsd-med.yml
-    - - literal
-      - !!inc/file fonts/nsd-reg.yml
+  - - literal
+    - !!inc/file fonts/nsd-sb.yml
   text-optional: true
   text-offset:
   - step
@@ -72,82 +37,23 @@ layout:
   - - literal
     - - 0
       - -0.3
-  - 8
-  - - match
-    - - get
-      - type
-    - City
-    - - literal
-      - - 0
-        - -0.3
-    - - literal #Town
-      - - 0
-        - -0.2
   - 9
-  - - match
-    - - get
-      - type
-    - Town
-    - - literal
-      - - 0
-        - -0.2
-    - - literal
-      - - 0
-        - 0
-  - 12
-  - - literal 
+  - - literal
     - - 0
       - 0
   text-size:
   - step
   - - zoom
-  - 0
-  - 7 #city appear at ZL7
-  - - match
-    - - get
-      - type
-    - City
-    - 10.6667
-    - 0
+  - 10.6667
   - 9
-  - - match
-    - - get
-      - type
-    - City
-    - 11.3333
-    - 0
-  - 11
-  - - match
-    - - get
-      - type
-    - City
-    - 11.3333
-    - Town
-    - 10.6667
-    - 0
-  - 14
-  - - match
-    - - get
-      - type
-    - Town
-    - 10.6667
-    - 0
-  - 15
-  - 0
+  - 11.3333
   text-anchor: # bottom
   - step
   - - zoom
   - bottom
   - 9
-  - - match
-    - - get
-      - type
-    - City
-    - center
-    - bottom
-  - 12
   - center
-maxzoom: 15
+maxzoom: 14
 minzoom: 7
 paint:
   text-color: '#343434'
