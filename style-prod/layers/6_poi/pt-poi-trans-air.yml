@@ -1,20 +1,20 @@
 filter:
-  - all
-  - - match
-    - - get
-      - z_order
-    - 5 #aerodrome
-    - - '!'
-      - - 'has'
-        - iata_code
-    - - 6 #helipad
-      - 7 #airfield
-    - true
-    - false
-  - - '=='
-    - - get 
-      - status
-    - true
+#  - all
+- match
+- - get
+  - z_order
+- 5 #aerodrome
+- - '!'
+  - - 'has'
+    - iata_code
+- - 6 #helipad
+  - 7 #airfield
+- true
+- false
+#  - - '=='
+#    - - get 
+#      - status
+#    - true
 id: pt-poi-trans-air
 layout:
   icon-allow-overlap: false

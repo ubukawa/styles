@@ -1,0 +1,58 @@
+filter:
+- match
+- - get
+  - z_order
+- - 1 #drinking_water
+  - 5 #water_well
+  - 6 #storage_tank
+- - '!'
+  - - '=='
+    - - get
+      - ungsc_mission
+    - UNMIK
+- false
+id: pt-poi-water
+layout:
+  icon-image:
+  - match
+  - - get
+    - z_order
+  - 6 #storage_tank
+  - POI_Storage
+#  - - 1 #drinking_water
+#    - 5 #water_well
+  - POI_Supply
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 0.8
+  - 17
+  - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#3D9CCC'
+  text-color: '#3D9CCC'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0
+  - 16
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_water
+type: symbol

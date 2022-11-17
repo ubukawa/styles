@@ -1,0 +1,55 @@
+filter:
+  - match
+  - - get 
+    - countrycode
+  - XKX 
+  - false
+  - - '=='
+    - - get
+      - type
+    - Town
+id: pt-place-mission-town
+layout:
+  icon-image: PPL_Town #Town> other should be controled by icon size
+  icon-size:
+  - step
+  - - zoom
+  - 1
+  - 11
+  - 0 # town fade out
+  text-field: '{placename1}'
+  text-font:
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/nsd-reg.yml
+  - 11 #ZL11
+  - - literal
+    - !!inc/file fonts/nsd-med.yml
+  text-optional: true
+  text-offset:
+  - step
+  - - zoom
+  - - literal #Town
+    - - 0
+      - -0.2
+  - 11
+  - - literal 
+    - - 0
+      - 0
+  text-size: 10.6667
+  text-anchor: # bottom
+  - step
+  - - zoom
+  - bottom
+  - 11
+  - center
+maxzoom: 16
+minzoom: 7
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_place
+type: symbol

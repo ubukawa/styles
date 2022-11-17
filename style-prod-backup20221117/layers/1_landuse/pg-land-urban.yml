@@ -1,0 +1,29 @@
+filter: # it can be filtered at VT creation stage. (there are 12 types of z_order in the source, military will be used in "area")
+  - match
+  - - get
+    - z_order
+  - - 35
+    - 36
+    - 37
+    - 41
+  - true
+  - false
+id: pg-land-urban
+maxzoom: !!inc/file maxz.yml
+paint:
+  fill-color:
+  - match
+  - - get
+    - z_order
+  - 35 # cemetery
+  - '#BDDFC9' 
+  - 36 # commercial
+  - '#ECE0CF'
+  - 37 # industrial
+  - '#E1DEEC'
+  - 41 # residential
+  - '#EDE6E6'
+  - '#FAF9F6' #other (There should be no feature. color is just same as the landmass)
+source: !!inc/file source.yml
+source-layer: lu_urban
+type: fill

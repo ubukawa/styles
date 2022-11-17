@@ -9,11 +9,12 @@ filter:
   - 5 #hindu
   - 6 #taoist
   - 7 #sikh
-- - '!'
-  - - '=='
-    - - get
-      - ungsc_mission
-    - UNMIK
+#- - '!'
+#  - - '=='
+#    - - get
+#      - ungsc_mission
+#    - UNMIK
+- true
 - false
 id: pt-poi-worship
 layout:

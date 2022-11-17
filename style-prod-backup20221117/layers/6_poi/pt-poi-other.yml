@@ -1,0 +1,110 @@
+filter:
+- match
+- - get
+  - z_order
+- - 3 #pitch
+  - 38 #waste_dosposal
+  - 46 #route
+  - 47 #multipolygon
+  - 48 #building
+  - 49 #area
+- false  
+- - '!'
+  - - '=='
+    - - get
+      - ungsc_mission
+    - UNMIK
+id: pt-poi-other
+layout:
+  icon-image:
+  - match
+  - - get
+    - z_order
+  - 37 #pharmacy
+  - POI_Pharmacy
+  - - 33 #bank
+    - 34 #atm
+  - POI_Bank
+  - 4 #stadium
+  - POI_Stadium
+  - 8 #zoo
+  - POI_Zoo
+  - - 2 #water_park
+    - 9 #theme_park
+  - POI_Amusement
+  - - 1 #golf_course
+    - 5 #sports_centre
+    - 32 #swimming_pool
+    - 40 #swimming
+    - 41 #tennis
+  - POI_Sport
+  - - 6 #park
+    - 7 #playground
+  - POI_Park
+  - - 10 #water_tower
+    - 43 #tower 
+  - POI_Tower
+  - 11 #communications_tower 
+  - POI_Communication
+  - 12 #windmill
+  - POI_Windmill
+  - 13 #lighthouse
+  - POI_Lighthouse
+  - - 14 #car_repair
+    - 15 #supermarket
+    - 16 #kiosk
+    - 17 #department_store 
+    - 18 #clothes
+    - 19 #books
+    - 20 #butcher
+    - 21 #beverages
+    - 22 #internet_cafe(currently null)
+    - 23 #optician
+    - 24 #stationery
+    - 25 #mobile_phone
+    - 26 #greengrocer
+    - 27 #car
+    - 28 #furniture
+    - 29 #computer
+    - 30 #hairdresser
+    - 31 #travel_agency
+    - 35 #marketplace
+    - 36 #car_rental
+    - 39 #bakery
+    - 50 #oil
+  - POI_Shop
+  - POI_Shop
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 0.8
+  - 17
+  - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#448970'
+  text-color: '#448970'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0
+  - 16
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_other
+type: symbol

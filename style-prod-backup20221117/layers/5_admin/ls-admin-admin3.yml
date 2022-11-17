@@ -1,0 +1,18 @@
+filter:
+  - match
+  - - get 
+    - bdytyp
+  - 10
+  - true
+  - false
+id: ls-admin-admin3
+minzoom: 9.21
+paint:
+  line-color: '#CCCCCC'
+  line-dasharray:
+    - 2
+    - 4
+  line-width: 0.666667
+source: !!inc/file source.yml
+source-layer: bndl
+type: line

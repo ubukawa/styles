@@ -1,0 +1,84 @@
+filter:
+- match
+- - get
+  - feat_class
+- - International Organisation
+  - Public Place
+  - National Institution
+  - Regional Organisation
+  - Library
+  - Youth Centre
+  - Social Centre
+  - Embassy
+  - Consulate
+  - Military Camp
+  - NGO
+  - Police
+  - Local Authority
+- true
+- false
+id: pt-poi-minusca-public
+layout:
+  icon-image:
+  - match
+  - - get
+    - feat_class
+  - - Embassy
+    - Consulate
+  - POI_Embassy
+  - Military Camp
+  - POI_Military
+  - NGO
+  - POI_NGO
+  - Police
+  - POI_Police
+  - Local Authority
+  - POI_Townhall
+  - POI_Public
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - 0.8
+  - 15
+  - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size:
+  - step
+  - - zoom
+  - 0
+  - 13
+  - 9.33333
+minzoom: 11
+paint:
+  icon-color: '#343434'
+  text-color: '#343434'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - 0
+  - 14
+  - 1
+  icon-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - 0
+  - 12
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_minusca
+type: symbol

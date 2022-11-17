@@ -1,0 +1,85 @@
+# z_order --> 2
+filter:
+  - match
+  - - get 
+    - ungsc_mission
+  - - UNMIK
+    - UNSMIL
+    - MINUSCA
+    - MONUSCO
+    - UNIFIL
+    - UNMISS
+    - UNAMID
+    - MINUJUSTH
+  - false
+  - - '=='
+    - - get
+      - z_order
+    - 2
+id: pt-place-osm-town
+layout:
+  icon-image: PPL_Town
+  icon-size:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 1 #city
+    - 1
+    - 0 # only town (z_order 2) comes at this ZL though
+  - 7
+  - - match
+    - - get
+      - z_order
+    - - 1 # city, town
+      - 2 
+    - 1  
+    - 0 # actually, no other z_order at this scale
+  - 8
+  - - match
+    - - get
+      - z_order
+    - 1 # city fade out
+    - 0 
+    - 2 # town continues
+    - 1  
+    - 0 # actually, no other z_order at this scale
+  - 11
+  - 0 # town fade out
+  text-field: '{name}'
+  text-font:
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/nsd-reg.yml
+  - 11
+  - - literal
+    - !!inc/file fonts/nsd-med.yml
+  text-optional: true
+  text-offset:
+  - step
+  - - zoom
+  - - literal
+    - - 0
+      - -0.2
+  - 11
+  - - literal 
+    - - 0
+      - 0
+  text-size: 10.6667
+  text-anchor: # bottom
+  - step
+  - - zoom
+  - bottom
+  - 11
+  - center
+maxzoom: 15
+minzoom: 7
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol

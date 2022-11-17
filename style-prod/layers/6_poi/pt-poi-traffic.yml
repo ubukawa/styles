@@ -1,11 +1,11 @@
-filter: #fclass is fuel, z_order is 1.
-- match
-- - get
-  - ungsc_mission
-- UNMIK
-- false
-- - get
-  - status
+#filter: #fclass is fuel, z_order is 1.
+#- match
+#- - get
+#  - ungsc_mission
+#- UNMIK
+#- false
+#- - get
+#  - status
 id: pt-poi-traffic
 layout:
   icon-image: POI_Fuel

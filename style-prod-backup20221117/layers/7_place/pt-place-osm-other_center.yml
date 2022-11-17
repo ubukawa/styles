@@ -1,0 +1,37 @@
+# z_order --> 4,5,6
+filter:
+  - match
+  - - get 
+    - ungsc_mission
+  - - UNMIK
+    - UNSMIL
+    - MINUSCA
+    - MONUSCO
+    - UNIFIL
+    - UNMISS
+    - UNAMID
+    - MINUJUSTH
+  - false
+  - - match
+    - - get
+      - z_order
+    - - 4
+      - 5
+      - 6
+    - true
+    - false
+id: pt-place-osm
+layout:
+  text-field: '{name}'
+  text-font: !!inc/file fonts/nsd-reg.yml
+  text-optional: true
+  text-size: 9.33333
+  text-anchor: center
+minzoom: 14
+paint:
+  text-color: '#656565'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol

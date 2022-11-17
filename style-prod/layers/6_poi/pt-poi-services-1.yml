@@ -17,13 +17,14 @@ filter:
   - 23 #guest_house
   - 24 #hostel
   - 25 #chalet
-- - match
-  - - get
-    - ungsc_mission
-  - UNMIK
-  - false
-  - - get
-    - status
+#- - match
+#  - - get
+#    - ungsc_mission
+#  - UNMIK
+#  - false
+#  - - get
+#    - status
+- true
 - false
 id: pt-poi-services-1
 layout:

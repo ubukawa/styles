@@ -1,0 +1,16 @@
+id: pt-lab-admin1
+layout:
+  text-field: '{adm1nm}'
+  text-font: !!inc/file fonts/nsd-sb-ita.yml
+  text-letter-spacing: 0.1
+  text-size: 12
+  text-optional: true
+maxzoom: 8
+minzoom: 7
+paint:
+  text-color: '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: bnd_lab1
+type: symbol

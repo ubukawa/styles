@@ -1,0 +1,120 @@
+# a,b,f are merged because they have the common color.
+filter:
+- all
+- - in
+  - - get
+    - z_order
+  - - literal
+    - - 3 #a
+      - 1 #b
+#      - 2 #f
+#      - 4 #f
+- - '!'
+  - - 'has'
+    - tunnel
+- - '!' 
+  - - 'has'
+    - bridge
+id: ls-road-line-ab
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 6 # small roads are displayed upto ZL6
+paint:
+  line-color:
+  - interpolate
+  - - exponential
+    - 0.5
+  - - zoom
+  - 12
+  - '#CC3D61'
+  - 13
+  - '#D1899B'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 4 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 0.15 #a 
+    - 1
+    - 0.1 #b
+    - 0 #f (other)
+  - 6 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 0.9 #a 
+    - 1
+    - 0.6 #b
+    - 0 #f (other)
+  - 8 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 1.2 #a 
+    - 1
+    - 0.8 #b
+    - 0.4 #f (other)
+  - 10 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 1.5 #a 
+    - 1
+    - 1 #b
+    - 0.5 #f (other)
+  - 12 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 2 #a 
+    - 1
+    - 1.33 #b
+    - 0.66 #f (other)
+  - 13 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 3 #a 
+    - 1
+    - 2 #b
+    - 1 #f (other)
+  - 15 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 6 #a 
+    - 1
+    - 4 #b
+    - 2 #f (other)
+  - 17 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 14 #a 
+    - 1
+    - 10 #b
+    - 6 #f (other)
+  - 19 ###### ZL #####
+  - - match
+    - - get
+      - z_order
+    - 3 
+    - 32 #a 
+    - 1
+    - 24 #b
+    - 18 #f (other)
+source: !!inc/file source.yml
+source-layer: road
+type: line

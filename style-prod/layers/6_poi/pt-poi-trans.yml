@@ -11,8 +11,9 @@ filter:
   - 15 # stop  (R)
   - 2 #tram_stop (T)
   - 12 #stop position (T)
-- - get
-  - status
+#- - get
+#  - status
+- true
 #- - '=='
 #  - - get
 #    - status

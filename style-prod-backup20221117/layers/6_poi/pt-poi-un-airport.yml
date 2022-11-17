@@ -1,0 +1,77 @@
+filter:
+#  - match
+#  - - get
+#    - countrycode
+#  - - LIB
+#    - CAF
+#  - false
+#  - - ==
+#    - - get
+#      - type
+#    - Airport
+  - all
+  - - '!in'
+    - countrycode
+    - LIB
+    - CAF
+  - - '=='
+    - type
+    - Airport
+id: pt-poi-un-airport
+layout:
+  icon-allow-overlap: false
+  icon-image:
+  - step
+  - - zoom
+  - POI_Airport_S
+  - 10
+  - POI_Airport
+  icon-optional: false
+  icon-padding: 0
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - 1
+  - 11
+  - 1.2
+  text-anchor: bottom
+  text-field: '{poiname}'
+  text-font:
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/p-font/nsd-sb.yml
+  - 10
+  - - literal
+    - !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+  - step
+  - - zoom
+  - - literal
+    - - 0
+      - -0.75
+  - 10
+  - - literal
+    - - 0
+      - -1.2
+  text-optional: true
+  text-padding: 0
+  text-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - 9.3333
+  - 10
+  - 11.3333
+minzoom: 7
+paint:
+  icon-color: '#802677'
+  text-color: '#802677'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_poi
+type: symbol

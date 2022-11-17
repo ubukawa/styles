@@ -1,0 +1,64 @@
+filter:
+- match
+- - get
+  - feat_class
+- - Zoo #POI_Zoo
+  - Bank #POI_Bank
+  - RadioTower #POI_Communication
+  - Telecommunication #POI_Communication
+  - Market #POI_Shop
+  - Super Market #POI_Shop
+  - Stadium #POI_Stadium
+- true
+- false
+id: pt-poi-minusca-other
+layout:
+  icon-image:
+  - match
+  - - get
+    - feat_clas
+  - Zoo
+  - POI_Zoo
+  - Bank
+  - POI_Bank
+  - - RadioTower 
+    - Telecommunication
+  - POI_Communication
+  - - Market
+    - Super Market
+  - POI_Shop
+  - POI_Stadium # Stadium
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16
+  - 0.8
+  - 17
+  - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#448970'
+  text-color: '#448970'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - 0
+  - 16
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_minusca
+type: symbol

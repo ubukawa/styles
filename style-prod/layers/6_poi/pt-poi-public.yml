@@ -1,11 +1,11 @@
-filter:
-- match 
-- - get
-  - ungsc_mission
-- UNMIK
-- false
-- - get
-  - status
+#filter:
+#- match 
+#- - get
+#  - ungsc_mission
+#- UNMIK
+#- false
+#- - get
+#  - status
 id: pt-poi-public
 layout:
   icon-image:

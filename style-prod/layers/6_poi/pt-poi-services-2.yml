@@ -12,13 +12,14 @@ filter:
   - 12 #pub
   - 13 #bar
   - 15 #cinema (no cinema in Esri map)
-- - match
-  - - get
-    - ungsc_mission
-  - UNMIK
-  - false
-  - - get
-    - status
+#- - match
+#  - - get
+#    - ungsc_mission
+#  - UNMIK
+#  - false
+#  - - get
+#    - status
+- true
 - false
 id: pt-poi-services-2
 layout:

@@ -1,0 +1,16 @@
+#This fill uses fill-pattern, so it is independent from other.
+filter:
+  - match
+  - - get
+    - z_order
+  - 3 #wetland
+  - true
+  - false
+id: pg-hydro-water-wetland
+maxzoom: !!inc/file maxz.yml
+minzoom: 6
+paint:
+  fill-pattern: HYD_Wetland
+source: !!inc/file source.yml
+source-layer: watera
+type: fill

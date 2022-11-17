@@ -9,11 +9,12 @@ filter:
   - 48 #building
   - 49 #area
 - false  
-- - '!'
-  - - '=='
-    - - get
-      - ungsc_mission
-    - UNMIK
+#- - '!'
+#  - - '=='
+#    - - get
+#      - ungsc_mission
+#    - UNMIK
+- true
 id: pt-poi-other
 layout:
   icon-image:

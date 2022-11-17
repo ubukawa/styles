@@ -5,11 +5,12 @@ filter:
 - - 1 #drinking_water
   - 5 #water_well
   - 6 #storage_tank
-- - '!'
-  - - '=='
-    - - get
-      - ungsc_mission
-    - UNMIK
+#- - '!'
+#  - - '=='
+#    - - get
+#      - ungsc_mission
+#    - UNMIK
+- true
 - false
 id: pt-poi-water
 layout:

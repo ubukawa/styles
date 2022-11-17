@@ -1,0 +1,64 @@
+filter:
+  - match
+  - - get 
+    - countrycode
+  - XKX # There is only Type "City" and "Town" in this data
+  - - '=='
+    - - get
+      - type
+    - City
+  - false
+id: pt-place-unmik-city
+layout:
+  icon-image: PPL_City
+  icon-size:
+  - step
+  - - zoom
+  - 0
+  - 6
+  - 1
+  - 9
+  - 0
+  text-field: |-
+    {label_1}
+    {label_2}
+  text-font:
+  - step
+  - - zoom
+  - - literal
+    - !!inc/file fonts/nsd-med.yml
+  - 9 #ZL9
+  - - literal
+    - !!inc/file fonts/nsd-sb.yml
+  text-optional: true
+  text-offset:
+  - step
+  - - zoom
+  - - literal
+    - - 0
+      - -0.3
+  - 9
+  - - literal
+    - - 0
+      - 0
+  text-size:
+  - step
+  - - zoom
+  - 10.6667
+  - 9
+  - 11.3333
+  text-anchor: # bottom
+  - step
+  - - zoom
+  - bottom
+  - 9
+  - center
+maxzoom: 14
+minzoom: 7
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_place
+type: symbol

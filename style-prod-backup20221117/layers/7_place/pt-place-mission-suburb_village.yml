@@ -1,0 +1,49 @@
+filter:
+  - match
+  - - get 
+    - countrycode
+  - XKX 
+  - false
+  - - match
+    - - get
+      - type
+    - - Suburb
+      - Village
+    - true
+    - false
+id: pt-place-mission-suburb_village
+layout:
+  text-field: '{placename1}'
+  text-font:
+  - match
+  - - get
+    - type
+  - Suburb
+  - - literal
+    - !!inc/file fonts/nsd-ita.yml
+  - - literal
+    - !!inc/file fonts/nsd-reg.yml
+  text-optional: true
+  text-size:
+  - match
+  - - get
+    - type
+  - Village
+  - 10
+  - 9.3333
+  text-anchor: center
+maxzoom: 16
+minzoom: 11
+paint:
+  text-color: #red
+  - match
+  - - get
+    - type
+  - Village
+  - '#4E4E4E'
+  - '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: un_place
+type: symbol

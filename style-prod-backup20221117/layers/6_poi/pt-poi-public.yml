@@ -1,0 +1,79 @@
+filter:
+- match 
+- - get
+  - ungsc_mission
+- UNMIK
+- false
+- - get
+  - status
+id: pt-poi-public
+layout:
+  icon-image:
+  - match
+  - - get
+    - z_order
+  - 1 #townhall
+  - POI_Townhall
+  - - 2 # embassy
+    - 14 # diplomatic
+  - POI_Embassy
+  - 3 #courthouse
+  - POI_Court
+  - 4 #police
+  - POI_Police
+  - 5 #prison
+  - POI_Prison
+  - 6 #fire_station
+  - POI_Fire
+  - 7 #post_office
+  - POI_Post
+  - 11 #NGO
+  - POI_NGO 
+  - POI_Public #social_facility(8),government(10),public_building(12) 
+  icon-size:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - 0.8
+  - 15
+  - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font: !!inc/file fonts/p-font/nsd-med.yml
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size:
+  - step
+  - - zoom
+  - 0
+  - 13
+  - 9.33333
+minzoom: 11
+paint:
+  icon-color: '#343434'
+  text-color: '#343434'
+  text-halo-color: "rgba(255,255,255,0.75)"
+  text-halo-width: 1.33333
+  text-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - 0
+  - 14
+  - 1
+  icon-opacity:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - 0
+  - 12
+  - 1
+source: !!inc/file source.yml
+source-layer: poi_public
+type: symbol

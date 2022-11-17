@@ -1,0 +1,67 @@
+# z_order --> 3,7,8
+filter:
+  - match
+  - - get 
+    - ungsc_mission
+  - - UNMIK
+    - UNSMIL
+    - MINUSCA
+    - MONUSCO
+    - UNIFIL
+    - UNMISS
+    - UNAMID
+    - MINUJUSTH
+  - false
+  - - match
+    - - get
+      - z_order
+    - - 3
+      - 7
+      - 8
+    - true
+    - false
+id: pt-place-osm-suburb_village
+layout:
+  text-field: '{name}'
+  text-font:
+  - match
+  - - get
+    - z_order
+  - 3
+  - - literal
+    - !!inc/file fonts/nsd-reg.yml
+  - - literal
+    - !!inc/file fonts/nsd-ita.yml
+  text-optional: true
+  text-size:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - z_order
+    - 3
+    - 10
+    - 9.33333 #7,8
+  - 15
+  - - match
+    - - get
+      - z_order
+    - 3
+    - 0
+    - 9.33333 #7,8
+  text-anchor: center
+maxzoom: 17
+minzoom: 11
+paint:
+  text-color: #'#343434'
+  - match
+  - - get
+    - z_order
+  - 3
+  - '#4E4E4E'
+  - '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: !!inc/file source.yml
+source-layer: osm_place
+type: symbol
