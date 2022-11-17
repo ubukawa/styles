@@ -178,14 +178,14 @@ layers:
   - !!inc/file layers/6_poi/pt-poi-minusca-public.yml
 #Places(other_center)
   - !!inc/file layers/7_place/pt-place-osm-other_center.yml
-#  - !!inc/file layers/7_place/pt-place-mission-other_center.yml 
+  - !!inc/file layers/7_place/pt-place-mission-other_center.yml 
 # label/admin2,3
   - !!inc/file layers/8_label/pt-lab-admin3-mik.yml
   - !!inc/file layers/8_label/pt-lab-admin3-vmc.yml
   - !!inc/file layers/8_label/pt-lab-admin2.yml
 #Places(Suburb and villege)
   - !!inc/file layers/7_place/pt-place-osm-suburb_village.yml
-#  - !!inc/file layers/7_place/pt-place-mission-suburb_village.yml 
+  - !!inc/file layers/7_place/pt-place-mission-suburb_village.yml 
 # POI trans
   - !!inc/file layers/6_poi/pt-poi-trans.yml
   - !!inc/file layers/6_poi/pt-poi-un-trans.yml
@@ -193,7 +193,7 @@ layers:
 #Place(town)
   - !!inc/file layers/7_place/pt-place-osm-town.yml
   - !!inc/file layers/7_place/pt-place-unmik-town.yml 
-#  - !!inc/file layers/7_place/pt-place-mission-town.yml 
+  - !!inc/file layers/7_place/pt-place-mission-town.yml 
 
 #POI helipad, airfield
   - !!inc/file layers/6_poi/pt-poi-trans-air.yml #airfield, helipad and aerodrome
